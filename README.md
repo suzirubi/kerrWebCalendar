@@ -1,4 +1,4 @@
-# CSS Week Four Independent Project
+# CSS Week Five Independent Project
 _*Epicodus CSS Capstone Independent Project
 Project Name: Kerr Calendar
 Project Author: Suzi Rubino*_

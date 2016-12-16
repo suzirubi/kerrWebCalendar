@@ -1,0 +1,33 @@
+// Descriptive Base Colors
+
+$white          : #fff;
+$black          : #0b0b0b;
+$grey           : #797e83;
+
+$kerrGreen      : #004126;
+$kerrGold       : #998844;
+
+
+// Base font size
+
+$base__font-size : 16px;
+$base__line      : 24px;
+
+
+// Font stacks
+
+$font-url--google         : 'https://fonts.googleapis.com/icon?family=Material+Icons';
+
+
+$stack-sans-serif         : 'TeX Gyre Heros', Arial, "Helvetica Neue", Helvetica, sans-serif !default;
+$stack-helvetica          : 'Helvetica Neue', $stack-sans-serif;
+$stack-officinaBook       : "OfficinaSerifBook", Georgia, serif;
+$stack-officinaBold       : "OfficinaSerifBook", Georgia, serif;
+$stack-kulturista         : 'Kulturista', "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif !default;
+
+$icon-font                : 'Material Icons';
+
+// Asset paths
+
+$path-img  : '../img';
+$path-font : '../fonts';

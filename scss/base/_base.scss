@@ -3,20 +3,21 @@
   box-sizing: border-box;
 }
 
+
 // Color Palette Modifiers
 
 $palettes: (
-  grey: (
-    xx-light : lighten($grey, 43%),
-    x-light  : lighten($grey, 35%),
-    light    : lighten($grey, 12%),
+  $kerrGold: (
+    xx-light : lighten($kerrGold, 43%),
+    x-light  : lighten($kerrGold, 35%),
+    light    : lighten($kerrGold, 12%),
     base     : $grey,
-    dark     : darken($grey, 8%),
-    x-dark   : darken($grey, 16%)
+    dark     : darken($kerrGold, 8%),
+    x-dark   : darken($kerrGold, 16%)
   ),
-	black: (
-		light    : lighten($black, 10%),
+	$kerrGreen : (
+		light    : lighten($kerrGreen, 10%),
 		base     : $black,
-		dark     : darken($black, 10%)
+		dark     : darken($kerrGreen, 10%)
 	)
 );

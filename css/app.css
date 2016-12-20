@@ -185,6 +185,14 @@ td,
 th {
   padding: 0; }
 
+/* Smartphones (landscape) ----------- */
+/* Styles */
+/* Smartphones (portrait) ----------- */
+/* Styles */
+/* Desktops and laptops ----------- */
+/* Styles */
+/* Large screens ----------- */
+/* Styles */
 * {
   box-sizing: border-box; }
 
@@ -231,7 +239,10 @@ h2 {
   font-size: 2em;
   line-height: 3; }
 
+body {
+  background-color: #ddd5b3; }
+
 .container {
-  width: 47.5em; }
+  width: 100vw; }
 
 /*# sourceMappingURL=app.css.map */

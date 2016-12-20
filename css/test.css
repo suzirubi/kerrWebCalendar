@@ -1,0 +1,41 @@
+
+body {
+    counter-reset: section;           /* Set the section counter to 0 */
+}
+ol {
+    counter-reset: item;
+    border-left:1px solid #ccc;
+    border-top:1px solid #ccc;
+    float:left;
+    margin:0;
+    padding:0;
+    width:1120px;
+}
+li {
+    width:159px;
+    height:119px;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    float:left;
+    position:relative;
+    overflow:hidden;
+}
+li {
+    display: block
+}
+li:after {
+    content: counter(item);
+    counter-increment: item;
+    color:#eee;
+    position:absolute;
+    bottom:-.28em;
+    right:0;
+    font-size:500&#37;;
+    font-weight:bold;
+    line-height:1.0;
+    z-index:-1;
+}
+li:nth-of-type(32):after,
+li:nth-of-type(33):after,
+li:nth-of-type(34):after,
+li:nth-of-type(35):after{content:" "}

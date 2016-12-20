@@ -196,6 +196,18 @@ th {
 * {
   box-sizing: border-box; }
 
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+ol {
+  margin: 0;
+  padding: 0; }
+
 @font-face {
   font-family: 'kulturista';
   src: url("../fonts/kulturista_bold-webfont.eot");
@@ -215,31 +227,31 @@ th {
   font-weight: normal;
   font-style: normal; }
 b {
-  font-family: 'ITCOfficinaSerifStdBookRg';
+  font-family: "ITCOfficinaSerifStdBookRg", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
   font-size: 16px;
   line-height: 24px; }
 
 p {
-  font-family: 'ITCOfficinaSerifStdBookRg';
+  font-family: "ITCOfficinaSerifStdBookRg", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
   font-weight: normal;
   font-size: 1em;
-  line-height: 3; }
+  line-height: 2.666; }
 
-h1 {
-  font-family: 'kulturista';
+header h1 {
+  font-family: "kulturista", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
   font-weight: 600;
   font-size: 3em;
-  line-height: 4.5;
+  line-height: 3.999;
   color: #004126; }
 
-h2 {
-  font-family: 'ITCOfficinaSerifStdBookRg';
+header h2 {
+  font-family: "ITCOfficinaSerifStdBookRg", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
   font-weight: normal;
   font-size: 2em;
-  line-height: 3; }
+  line-height: 2.666; }
 
-h3 {
-  font-family: 'ITCOfficinaSerifStdBookRg';
+header h3 {
+  font-family: "ITCOfficinaSerifStdBookRg", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
   font-weight: normal;
   font-size: 1.5em;
   line-height: 1.875; }
@@ -247,7 +259,7 @@ h3 {
 a {
   text-decoration: none; }
 
-ul li {
+ul {
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -257,7 +269,7 @@ header {
   width: 100vw;
   height: 10vh;
   margin: 0;
-  padding: 1em 2em; }
+  padding: .75em .75em; }
 
 .navBar {
   width: 100%;
@@ -268,18 +280,21 @@ header {
 
 .navBar .logo {
   width: 10%;
-  align-self: center; }
+  align-self: flex-start; }
   .navBar .logo a svg {
-    width: 3.5em;
-    -webkit-filter: drop-shadow(3px 1px 1px #002817); }
+    width: 2.75em;
+    -webkit-filter: drop-shadow(3px 1px 1px #002817);
+    filter: drop-shadow(3px 1px 1px #002817); }
 
 .name {
-  width: 60%;
-  align-self: center; }
+  width: 67%;
+  align-self: center;
+  margin-left: .75em; }
   .name svg {
     width: 100%;
     text-align: center;
-    -webkit-filter: drop-shadow(3px 1px 1px #002817); }
+    -webkit-filter: drop-shadow(3px 1px 1px #002817);
+    filter: drop-shadow(3px 1px 1px #002817); }
 
 .navBar ul {
   width: 10%;
@@ -287,15 +302,18 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: center; }
+  align-items: center;
+  padding-left: .5em; }
   .navBar ul li {
     width: 100%; }
     .navBar ul li a svg {
-      width: 1.25em; }
+      width: .75em;
+      -webkit-filter: opacity(0.7);
+      filter: opacity(0.7); }
     .navBar ul li:first-child {
-      margin-right: .25em; }
+      margin-right: -.1em; }
     .navBar ul li:last-child {
-      margin-left: .25em; }
+      margin-left: -.1em; }
 
 .gallery {
   width: 100vw;

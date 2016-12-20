@@ -40,14 +40,12 @@ b {
   font-size: $base__font-size;
   line-height: $base__line;
 }
-
 p {
   font-family: 'ITCOfficinaSerifStdBookRg', $georgia, serif;
   font-weight: normal;
   font-size: 1em;
   line-height: (2 * 1.333);
 }
-
 header h1 {
   font-family: 'kulturista', $georgia, serif;
   font-weight: 600;
@@ -55,24 +53,36 @@ header h1 {
   line-height: (3 * 1.333);
   color: $kerrGreen;
 }
-
 header h2 {
   font-family: 'ITCOfficinaSerifStdBookRg', $georgia, serif;
   font-weight: normal;
   font-size: 2em;
   line-height: (2 * 1.333);
 }
-header h3 {
-  font-family: 'ITCOfficinaSerifStdBookRg', $georgia, serif;
-  font-weight: normal;
-  font-size: 1.5em;
-  line-height: (1.25 * 1.5);
+main ul li {
+  font-family: 'kulturista', $georgia, serif;
+  font-weight: 600;
+  font-size: 1.1em;
+  line-height: (1.1 * 1.5);
+  color: tint($kerrGreen,5%);
+  text-transform: uppercase;
 }
-a {
-  text-decoration: none;
-}
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+main ul li {
+  &:nth-of-type(1):before,
+  &:last-of-type:before {
+    content:'S';
+  }
+  &:nth-of-type(2):before,
+  &:nth-of-type(4):before {
+    content: "T";
+  }
+  &:nth-of-type(1):before {
+    content: "M";
+  }
+  &:nth-of-type(3):before {
+    content: "W";
+  }
+  &:nth-of-type(5):before {
+    content: "F";
+  }
 }

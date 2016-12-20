@@ -5,6 +5,7 @@ header {
   height: 10vh;
   margin:0;
   padding: .75em .75em;
+  @include filter(drop-shadow(3px 0px 4px tint($grey,5%)));
 }
 .navBar {
   width: 100%;

@@ -46,26 +46,35 @@ p {
   font-size: 1em;
   line-height: (2 * 1.333);
 }
-header h1 {
+h1 {
   font-family: 'kulturista', $georgia, serif;
   font-weight: 600;
   font-size: 3em;
   line-height: (3 * 1.333);
   color: $kerrGreen;
 }
-header h2 {
-  font-family: 'ITCOfficinaSerifStdBookRg', $georgia, serif;
+main h2 {
+  font-family: 'kulturista', $georgia, serif;
   font-weight: normal;
-  font-size: 2em;
-  line-height: (2 * 1.333);
+  font-size: 1.2em;
+  line-height: 1;
+  color: shade($kerrGreen,5%);
+  text-align: center;
+  text-transform: uppercase;
+  margin-right: .25em;
+  margin-top: .5em;
 }
 main ul li {
   font-family: 'kulturista', $georgia, serif;
   font-weight: 600;
-  font-size: 1.1em;
+  font-size: .85em;
   line-height: (1.1 * 1.5);
-  color: tint($kerrGreen,5%);
+  color: tint($kerrGreen,35%);
   text-transform: uppercase;
+  border-right: .5px solid $grey;
+  &:last-of-type {
+    border-right: 0px;
+  }
 }
 main ul li {
   &:nth-of-type(1):before,
@@ -84,5 +93,35 @@ main ul li {
   }
   &:nth-of-type(5):before {
     content: "F";
+  }
+}
+main ol {
+  counter-reset: item;
+}
+main ol li {
+  width: 100px;
+  height: 100px;
+  border-right:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  position: relative;
+  &:after {
+    font-family: 'ITCOfficinaSerifStdBookRg', $georgia, serif;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: (2 * 1.333);
+    color: tint($kerrGreen,25%);
+    content: counter(item);
+    counter-increment: item;
+    position:absolute;
+    bottom: -.75em;
+    right:.25em;
+  }
+}
+main ol li {
+  &:nth-of-type(32):before,
+  &:nth-of-type(33):before,
+  &:nth-of-type(34):before,
+  &:nth-of-type(35):before {
+    content: " ";
   }
 }

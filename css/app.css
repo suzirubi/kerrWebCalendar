@@ -217,8 +217,7 @@ th {
 b {
   font-family: 'ITCOfficinaSerifStdBookRg';
   font-size: 16px;
-  line-height: 24px;
-  background-color: #797e83; }
+  line-height: 24px; }
 
 p {
   font-family: 'ITCOfficinaSerifStdBookRg';
@@ -239,10 +238,58 @@ h2 {
   font-size: 2em;
   line-height: 3; }
 
-body {
-  background-color: #ddd5b3; }
+h3 {
+  font-family: 'ITCOfficinaSerifStdBookRg';
+  font-weight: normal;
+  font-size: 1.5em;
+  line-height: 1.875; }
 
-.container {
-  width: 100vw; }
+a {
+  text-decoration: none; }
+
+ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+header {
+  background: #004126;
+  width: 100vw;
+  height: 5em;
+  margin: 0;
+  padding: 1em 2em; }
+
+.navBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.navBar .logo {
+  width: 10%;
+  align-self: center; }
+  .navBar .logo a svg {
+    width: 3.5em; }
+
+.name {
+  width: 60%;
+  align-self: center; }
+  .name svg {
+    width: 100%;
+    text-align: center;
+    -webkit-filter: drop-shadow(5px 2px 2px #000e08); }
+
+.navBar ul {
+  width: 10%;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center; }
+  .navBar ul li {
+    width: 100%; }
+    .navBar ul li a svg {
+      width: 1.5em; }
 
 /*# sourceMappingURL=app.css.map */

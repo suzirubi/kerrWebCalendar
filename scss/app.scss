@@ -3,11 +3,3 @@
 @import "base/index";
 @import "components/index";
 @import "layout/index";
-
-body {
-  background-color: palette($kerrGold, x-light);
-}
-
-.container {
-  width: 100vw;
-}

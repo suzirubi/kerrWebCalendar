@@ -1,0 +1,45 @@
+
+header {
+  background: $kerrGreen;
+  width: 100vw;
+  height: 5em;
+  margin:0;
+  padding: 1em 2em;
+}
+.navBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navBar .logo {
+  width: 10%;
+  align-self: center;
+  & a svg {
+    width: 3.5em;
+  }
+}
+.name {
+  width: 60%;
+  align-self: center;
+  & svg {
+    width: 100%;
+    text-align: center;
+    -webkit-filter: drop-shadow( 5px 2px 2px darken($kerrGreen,10%) );
+  }
+}
+.navBar ul {
+  width: 10%;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  li {
+    width:100%;
+    & a svg {
+      width: 1.5em;
+    }
+  }
+}

@@ -53,7 +53,7 @@ h1 {
   line-height: (3 * 1.333);
   color: $kerrGreen;
 }
-main h2 {
+main > h2 {
   font-family: 'kulturista', $georgia, serif;
   font-weight: normal;
   font-size: 1.2em;
@@ -62,37 +62,38 @@ main h2 {
   text-align: center;
   text-transform: uppercase;
   margin-right: .25em;
-  margin-top: .5em;
 }
 main ul li {
   font-family: 'kulturista', $georgia, serif;
   font-weight: 600;
-  font-size: .85em;
+  font-size: 1em;
   line-height: (1.1 * 1.5);
-  color: tint($kerrGreen,35%);
+  color: shade($kerrGreen,5%);
   text-transform: uppercase;
-  border-right: .5px solid $grey;
-  &:last-of-type {
-    border-right: 0px;
-  }
+  text-align: center;
 }
 main ul li {
-  &:nth-of-type(1):before,
+  &:first-of-type:before,
   &:last-of-type:before {
     content:'S';
+    text-shadow: 0 0 5px #ffffff;
   }
-  &:nth-of-type(2):before,
-  &:nth-of-type(4):before {
-    content: "T";
-  }
-  &:nth-of-type(1):before {
-    content: "M";
-  }
-  &:nth-of-type(3):before {
-    content: "W";
-  }
+  &:nth-of-type(3):before,
   &:nth-of-type(5):before {
+    content: "T";
+    text-shadow: 0 0 5px #ffffff;
+  }
+  &:nth-of-type(2):before {
+    content: "M";
+    text-shadow: 0 0 5px #ffffff;
+  }
+  &:nth-of-type(4):before {
+    content: "W";
+    text-shadow: 0 0 5px #ffffff;
+  }
+  &:nth-of-type(6):before {
     content: "F";
+    text-shadow: 0 0 5px #ffffff;
   }
 }
 main ol {
@@ -109,7 +110,8 @@ main ol li {
     font-weight: normal;
     font-size: 1em;
     line-height: (2 * 1.333);
-    color: tint($kerrGreen,25%);
+    color: $white;
+    // color: shade($kerrGreen, 25%);
     content: counter(item);
     counter-increment: item;
     position:absolute;

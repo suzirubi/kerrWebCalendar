@@ -1,0 +1,85 @@
+main {
+  width: 100vw;
+  height: 91.5vh;
+  // @include background-image(url("../img/kerr-janOffice.jpg"));
+  // background-position: center top;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  margin-top: 8.5vh;
+  padding: .5em 0em;
+  // & a:hover,
+  //   a:active {
+  //   width: 100vw;
+  //   height: 91.5vh;
+  //   @include background-image(url("../img/kerr-janOffice.jpg"),radial-gradient($kerrGreen 0, transparent 50%));
+  //   background-position: center top;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  // }
+}
+
+main ul {
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+main ul li {
+  width: 14.2857143%;
+  height: (14.2857143% * 1.33);
+}
+main ol {
+  width:100%;
+  height:71.4285%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+main ol li {
+  @include clearfix;
+  width: 14.2857143%;
+  height: (14.2857143% * 1.4);
+  border-right: $border-calendar;
+  border-bottom: $border-calendar;
+  position: relative;
+  &:after {
+    font-family: 'ITCOfficinaSerifStdBookRg', $georgia, serif;
+    font-weight: normal;
+    font-size: .8em;
+    line-height: (2 * 1.333);
+    color: $kerrGreen;
+    // color: shade($kerrGreen, 25%);
+    content: counter(item);
+    counter-increment: item;
+    position:absolute;
+    bottom: -.75em;
+    right:.35em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// &:after {
+//   border-right: $border-calendar;
+//   position: absolute;
+//   bottom: -.5em;
+//   right: 0;
+// }
+// &:last-of-type {
+//   border-right: 0px;
+// }

@@ -200,7 +200,8 @@ body {
   counter-reset: section; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit; }
 
 ul {
   list-style: none;
@@ -208,6 +209,7 @@ ul {
   padding: 0; }
 
 ol {
+  list-style: none;
   margin: 0;
   padding: 0; }
 
@@ -247,7 +249,7 @@ h1 {
   line-height: 3.999;
   color: #004126; }
 
-main h2 {
+main > h2 {
   font-family: "kulturista", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
   font-weight: normal;
   font-size: 1.2em;
@@ -255,30 +257,32 @@ main h2 {
   color: #003e24;
   text-align: center;
   text-transform: uppercase;
-  margin-right: .25em;
-  margin-top: .5em; }
+  margin-right: .25em; }
 
 main ul li {
   font-family: "kulturista", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
   font-weight: 600;
-  font-size: .85em;
+  font-size: 1em;
   line-height: 1.65;
-  color: #598472;
+  color: #003e24;
   text-transform: uppercase;
-  border-right: 0.5px solid #797e83; }
-  main ul li:last-of-type {
-    border-right: 0px; }
+  text-align: center; }
 
-main ul li:nth-of-type(1):before, main ul li:last-of-type:before {
-  content: 'S'; }
-main ul li:nth-of-type(2):before, main ul li:nth-of-type(4):before {
-  content: "T"; }
-main ul li:nth-of-type(1):before {
-  content: "M"; }
-main ul li:nth-of-type(3):before {
-  content: "W"; }
-main ul li:nth-of-type(5):before {
-  content: "F"; }
+main ul li:first-of-type:before, main ul li:last-of-type:before {
+  content: 'S';
+  text-shadow: 0 0 5px #ffffff; }
+main ul li:nth-of-type(3):before, main ul li:nth-of-type(5):before {
+  content: "T";
+  text-shadow: 0 0 5px #ffffff; }
+main ul li:nth-of-type(2):before {
+  content: "M";
+  text-shadow: 0 0 5px #ffffff; }
+main ul li:nth-of-type(4):before {
+  content: "W";
+  text-shadow: 0 0 5px #ffffff; }
+main ul li:nth-of-type(6):before {
+  content: "F";
+  text-shadow: 0 0 5px #ffffff; }
 
 main ol {
   counter-reset: item; }
@@ -294,7 +298,7 @@ main ol li {
     font-weight: normal;
     font-size: 1em;
     line-height: 2.666;
-    color: #40715c;
+    color: #fff;
     content: counter(item);
     counter-increment: item;
     position: absolute;
@@ -304,14 +308,68 @@ main ol li {
 main ol li:nth-of-type(32):before, main ol li:nth-of-type(33):before, main ol li:nth-of-type(34):before, main ol li:nth-of-type(35):before {
   content: " "; }
 
+main {
+  width: 100vw;
+  height: 91.5vh;
+  margin-top: 8.5vh;
+  padding: .5em 0em; }
+
+main ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative; }
+
+main ul li {
+  width: 14.2857143%;
+  height: 19%; }
+
+main ol {
+  width: 100%;
+  height: 71.4285%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  overflow: hidden; }
+
+main ol li {
+  width: 14.2857143%;
+  height: 20%;
+  border-right: 0.5px solid #797e83;
+  border-bottom: 0.5px solid #797e83;
+  position: relative; }
+  main ol li::after {
+    clear: both;
+    content: "";
+    display: block; }
+  main ol li:after {
+    font-family: "ITCOfficinaSerifStdBookRg", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+    font-weight: normal;
+    font-size: .8em;
+    line-height: 2.666;
+    color: #004126;
+    content: counter(item);
+    counter-increment: item;
+    position: absolute;
+    bottom: -.75em;
+    right: .35em; }
+
 header {
+  -webkit-filter: drop-shadow(3px 0px 4px #808489);
+  filter: drop-shadow(3px 0px 4px #808489);
   background: #004126;
   width: 100vw;
   height: 10vh;
   margin: 0;
   padding: .75em .75em;
-  -webkit-filter: drop-shadow(3px 0px 4px #808489);
-  filter: drop-shadow(3px 0px 4px #808489); }
+  position: fixed;
+  top: 0;
+  left: 0; }
 
 .navBar {
   width: 100%;
@@ -356,30 +414,5 @@ header {
       margin-right: -.1em; }
     .navBar ul li:last-child {
       margin-left: -.1em; }
-
-.gallery {
-  width: 100vw;
-  height: 90vh;
-  background-image: url("../img/kerr-janOffice.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 1em; }
-
-.row {
-  width: 100%;
-  height: 16%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #797e83; }
-  .row span {
-    width: 14.2857142857143%;
-    height: 100%;
-    border-right: 1px solid #797e83; }
 
 /*# sourceMappingURL=app.css.map */

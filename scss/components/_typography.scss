@@ -53,7 +53,10 @@ h1 {
   line-height: (3 * 1.333);
   color: $kerrGreen;
 }
-main > h2 {
+
+// **** BEGIN Main
+
+main h2 {
   font-family: 'kulturista', $georgia, serif;
   font-weight: normal;
   font-size: 1.2em;
@@ -61,12 +64,11 @@ main > h2 {
   color: shade($kerrGreen,5%);
   text-align: center;
   text-transform: uppercase;
-  margin-right: .25em;
 }
 main ul li {
   font-family: 'kulturista', $georgia, serif;
   font-weight: 600;
-  font-size: 1em;
+  font-size: .9em;
   line-height: (1.1 * 1.5);
   color: shade($kerrGreen,5%);
   text-transform: uppercase;
@@ -126,4 +128,16 @@ main ol li {
   &:nth-of-type(35):before {
     content: " ";
   }
+}
+
+// **** BEGIN Footer
+
+footer h1 {
+  font-family: 'ITCOfficinaSerifStdBookRg', $georgia, serif;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: (2 * 1.333);
+  color: $white;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
 }

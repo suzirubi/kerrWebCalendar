@@ -249,20 +249,19 @@ h1 {
   line-height: 3.999;
   color: #004126; }
 
-main > h2 {
+main h2 {
   font-family: "kulturista", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
   font-weight: normal;
   font-size: 1.2em;
   line-height: 1;
   color: #003e24;
   text-align: center;
-  text-transform: uppercase;
-  margin-right: .25em; }
+  text-transform: uppercase; }
 
 main ul li {
   font-family: "kulturista", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
   font-weight: 600;
-  font-size: 1em;
+  font-size: .9em;
   line-height: 1.65;
   color: #003e24;
   text-transform: uppercase;
@@ -308,11 +307,38 @@ main ol li {
 main ol li:nth-of-type(32):before, main ol li:nth-of-type(33):before, main ol li:nth-of-type(34):before, main ol li:nth-of-type(35):before {
   content: " "; }
 
+footer h1 {
+  font-family: "ITCOfficinaSerifStdBookRg", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 2.666;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased; }
+
 main {
   width: 100vw;
   height: 91.5vh;
+  background-image: url("../img/kerr-janOffice.jpg");
+  background-image: url("../img/kerr-janOffice.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-top: 8.5vh;
-  padding: .5em 0em; }
+  padding: .5em .5em; }
+
+main .monthArrows {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: .25em; }
+  main .monthArrows svg {
+    -webkit-filter: opacity(0.4);
+    filter: opacity(0.4);
+    width: 1.75em;
+    padding-top: .75em; }
 
 main ul {
   width: 100%;
@@ -323,12 +349,14 @@ main ul {
   position: relative; }
 
 main ul li {
-  width: 14.2857143%;
-  height: 19%; }
+  width: 14.2857143%; }
 
 main ol {
   width: 100%;
-  height: 71.4285%;
+  height: 71.42857%;
+  background-color: rgba(121, 126, 131, 0.45);
+  border-top: 0.5px solid #797e83;
+  border-left: 0.5px solid #797e83;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -352,7 +380,9 @@ main ol li {
     font-weight: normal;
     font-size: .8em;
     line-height: 2.666;
-    color: #004126;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 0px #0b0b0b;
     content: counter(item);
     counter-increment: item;
     position: absolute;
@@ -414,5 +444,28 @@ header {
       margin-right: -.1em; }
     .navBar ul li:last-child {
       margin-left: -.1em; }
+
+footer {
+  width: 100vw;
+  height: 10vh;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #004126;
+  -webkit-filter: drop-shadow(-3px 0px 4px rgba(255, 255, 255, 0.1));
+  filter: drop-shadow(-3px 0px 4px rgba(255, 255, 255, 0.1));
+  padding: .5em; }
+
+.notificationBar {
+  width: 100%;
+  height: 10vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1em; }
+  .notificationBar svg {
+    height: 1.75em; }
 
 /*# sourceMappingURL=app.css.map */

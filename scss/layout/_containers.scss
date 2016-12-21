@@ -1,22 +1,19 @@
 main {
   width: 100vw;
   height: 91.5vh;
-  @include background-image(url("../img/kerr-janOffice.jpg"));
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin-top: 8.5vh;
   padding: .5em .5em;
-  // & a:hover,
-  //   a:active {
-  //   width: 100vw;
-  //   height: 91.5vh;
-  //   @include background-image(url("../img/kerr-janOffice.jpg"),radial-gradient($kerrGreen 0, transparent 50%));
-  //   background-position: center top;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  // }
+  &.month_1 {
+    @include background-image(url("../img/kerr-janOffice.jpg"));
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &.month_2 {
+    @include background-image(url("../img/kerr-feb.jpg"));
+  }
 }
+
 main .monthArrows {
   width: 100%;
   display: flex;
@@ -80,24 +77,3 @@ main ol li {
     right:.35em;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-// &:after {
-//   border-right: $border-calendar;
-//   position: absolute;
-//   bottom: -.5em;
-//   right: 0;
-// }
-// &:last-of-type {
-//   border-right: 0px;
-// }

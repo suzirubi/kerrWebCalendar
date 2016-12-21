@@ -62,7 +62,6 @@ main h2 {
   font-size: 1.2em;
   line-height: 1;
   color: shade($kerrGreen,5%);
-  text-align: center;
   text-transform: uppercase;
 }
 main ul li {
@@ -132,11 +131,11 @@ main ol li {
 
 // **** BEGIN Footer
 
-footer h1 {
+footer h6 {
   font-family: 'ITCOfficinaSerifStdBookRg', $georgia, serif;
   font-weight: normal;
   font-size: 1em;
-  line-height: (2 * 1.333);
+  line-height: 1.5;
   color: $white;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;

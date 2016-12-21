@@ -199,6 +199,11 @@ th {
 body {
   counter-reset: section; }
 
+h1 h2 h3 h4 h5 h6 {
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
 a {
   text-decoration: none;
   color: inherit; }
@@ -255,7 +260,6 @@ main h2 {
   font-size: 1.2em;
   line-height: 1;
   color: #003e24;
-  text-align: center;
   text-transform: uppercase; }
 
 main ul li {
@@ -307,11 +311,11 @@ main ol li {
 main ol li:nth-of-type(32):before, main ol li:nth-of-type(33):before, main ol li:nth-of-type(34):before, main ol li:nth-of-type(35):before {
   content: " "; }
 
-footer h1 {
+footer h6 {
   font-family: "ITCOfficinaSerifStdBookRg", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
   font-weight: normal;
   font-size: 1em;
-  line-height: 2.666;
+  line-height: 1.5;
   color: #fff;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased; }
@@ -319,13 +323,17 @@ footer h1 {
 main {
   width: 100vw;
   height: 91.5vh;
-  background-image: url("../img/kerr-janOffice.jpg");
-  background-image: url("../img/kerr-janOffice.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin-top: 8.5vh;
   padding: .5em .5em; }
+  main.month_1 {
+    background-image: url("../img/kerr-janOffice.jpg");
+    background-image: url("../img/kerr-janOffice.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  main.month_2 {
+    background-image: url("../img/kerr-feb.jpg");
+    background-image: url("../img/kerr-feb.jpg"); }
 
 main .monthArrows {
   width: 100%;

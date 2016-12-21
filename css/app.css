@@ -293,8 +293,6 @@ main ol {
 main ol li {
   width: 100px;
   height: 100px;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
   position: relative; }
   main ol li:after {
     font-family: "ITCOfficinaSerifStdBookRg", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
@@ -306,10 +304,9 @@ main ol li {
     counter-increment: item;
     position: absolute;
     bottom: -.75em;
-    right: .25em; }
-
-main ol li:nth-of-type(32):before, main ol li:nth-of-type(33):before, main ol li:nth-of-type(34):before, main ol li:nth-of-type(35):before {
-  content: " "; }
+    right: .25em;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 0px #0b0b0b; }
 
 footer h6 {
   font-family: "ITCOfficinaSerifStdBookRg", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
@@ -322,27 +319,48 @@ footer h6 {
 
 main {
   width: 100vw;
-  height: 91.5vh;
-  margin-top: 8.5vh;
-  padding: .5em .5em; }
+  height: 100vh;
+  padding: 10vh 3vw 20vh 1vw;
+  overflow: hidden; }
   main.month_1 {
     background-image: url("../img/kerr-janOffice.jpg");
     background-image: url("../img/kerr-janOffice.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover; }
+    main.month_1 ol li {
+      background-color: rgba(0, 65, 38, 0.25); }
+      main.month_1 ol li:hover {
+        background-color: #004126; }
+    main.month_1 li:nth-of-type(32),
+    main.month_1 :nth-of-type(33),
+    main.month_1 :nth-of-type(34),
+    main.month_1 :nth-of-type(35) {
+      background-color: rgba(255, 255, 255, 0); }
+    main.month_1 li:nth-of-type(32):after,
+    main.month_1 :nth-of-type(33):after,
+    main.month_1 :nth-of-type(34):after,
+    main.month_1 :nth-of-type(35):after {
+      content: " "; }
   main.month_2 {
     background-image: url("../img/kerr-feb.jpg");
-    background-image: url("../img/kerr-feb.jpg"); }
+    background-image: url("../img/kerr-feb.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    main.month_2 ol li {
+      background-color: rgba(255, 255, 255, 0.25); }
+      main.month_2 ol li:hover {
+        background-color: white; }
 
-main .monthArrows {
+.monthArrows {
   width: 100%;
+  height: 7.14285714285714285%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: center;
   margin-top: .25em; }
-  main .monthArrows svg {
+  .monthArrows svg {
     -webkit-filter: opacity(0.4);
     filter: opacity(0.4);
     width: 1.75em;
@@ -350,52 +368,42 @@ main .monthArrows {
 
 main ul {
   width: 100%;
+  height: 3.57143%;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
   justify-content: center;
-  position: relative; }
+  align-items: flex-start;
+  position: relative;
+  margin: .5em 0em; }
 
 main ul li {
-  width: 14.2857143%; }
+  width: 14.2857143%;
+  height: 7.14285714285714285%;
+  padding: 0em 0em 0em .5em; }
 
 main ol {
   width: 100%;
-  height: 71.42857%;
-  background-color: rgba(121, 126, 131, 0.45);
-  border-top: 0.5px solid #797e83;
-  border-left: 0.5px solid #797e83;
+  height: 85.71429%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
 
 main ol li {
-  width: 14.2857143%;
-  height: 20%;
-  border-right: 0.5px solid #797e83;
-  border-bottom: 0.5px solid #797e83;
-  position: relative; }
-  main ol li::after {
-    clear: both;
-    content: "";
-    display: block; }
-  main ol li:after {
-    font-family: "ITCOfficinaSerifStdBookRg", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
-    font-weight: normal;
-    font-size: .8em;
-    line-height: 2.666;
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
-    text-shadow: 1px 1px 0px #0b0b0b;
-    content: counter(item);
-    counter-increment: item;
-    position: absolute;
-    bottom: -.75em;
-    right: .35em; }
+  width: 12.2857143%;
+  height: 16.2857143%;
+  position: relative;
+  margin-right: 1%;
+  margin-bottom: .5em; }
+
+li:nth-child(7),
+:nth-child(14),
+:nth-child(21),
+:nth-child(28),
+:nth-child(35) {
+  margin-right: 0%; }
 
 header {
   -webkit-filter: drop-shadow(3px 0px 4px #808489);
@@ -407,7 +415,8 @@ header {
   padding: .75em .75em;
   position: fixed;
   top: 0;
-  left: 0; }
+  left: 0;
+  z-index: 1000; }
 
 .navBar {
   width: 100%;
@@ -462,7 +471,8 @@ footer {
   background-color: #004126;
   -webkit-filter: drop-shadow(-3px 0px 4px rgba(255, 255, 255, 0.1));
   filter: drop-shadow(-3px 0px 4px rgba(255, 255, 255, 0.1));
-  padding: .5em; }
+  padding: .5em;
+  z-index: 1000; }
 
 .notificationBar {
   width: 100%;

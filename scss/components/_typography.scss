@@ -103,8 +103,6 @@ main ol {
 main ol li {
   width: 100px;
   height: 100px;
-  border-right:1px solid #ccc;
-  border-bottom:1px solid #ccc;
   position: relative;
   &:after {
     font-family: 'ITCOfficinaSerifStdBookRg', $georgia, serif;
@@ -112,22 +110,16 @@ main ol li {
     font-size: 1em;
     line-height: (2 * 1.333);
     color: $white;
-    // color: shade($kerrGreen, 25%);
     content: counter(item);
     counter-increment: item;
     position:absolute;
     bottom: -.75em;
     right:.25em;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 0px $black;
   }
 }
-main ol li {
-  &:nth-of-type(32):before,
-  &:nth-of-type(33):before,
-  &:nth-of-type(34):before,
-  &:nth-of-type(35):before {
-    content: " ";
-  }
-}
+
 
 // **** BEGIN Footer
 

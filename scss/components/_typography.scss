@@ -110,11 +110,6 @@ main ol li {
     font-size: 1em;
     line-height: (2 * 1.333);
     color: $white;
-    content: counter(item);
-    counter-increment: item;
-    position:absolute;
-    bottom: -.75em;
-    right:.25em;
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 0px $black;
   }

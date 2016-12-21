@@ -197,7 +197,7 @@ th {
   box-sizing: border-box; }
 
 body {
-  counter-reset: section; }
+  counter-reset: ol; }
 
 h1 h2 h3 h4 h5 h6 {
   margin: 0;
@@ -300,11 +300,6 @@ main ol li {
     font-size: 1em;
     line-height: 2.666;
     color: #fff;
-    content: counter(item);
-    counter-increment: item;
-    position: absolute;
-    bottom: -.75em;
-    right: .25em;
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 0px #0b0b0b; }
 
@@ -322,36 +317,82 @@ main {
   height: 100vh;
   padding: 10vh 3vw 20vh 1vw;
   overflow: hidden; }
-  main.month_1 {
-    background-image: url("../img/kerr-janOffice.jpg");
-    background-image: url("../img/kerr-janOffice.jpg");
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover; }
-    main.month_1 ol li {
-      background-color: rgba(0, 65, 38, 0.25); }
-      main.month_1 ol li:hover {
-        background-color: #004126; }
-    main.month_1 li:nth-of-type(32),
-    main.month_1 :nth-of-type(33),
-    main.month_1 :nth-of-type(34),
-    main.month_1 :nth-of-type(35) {
-      background-color: rgba(255, 255, 255, 0); }
-    main.month_1 li:nth-of-type(32):after,
-    main.month_1 :nth-of-type(33):after,
-    main.month_1 :nth-of-type(34):after,
-    main.month_1 :nth-of-type(35):after {
-      content: " "; }
-  main.month_2 {
-    background-image: url("../img/kerr-feb.jpg");
-    background-image: url("../img/kerr-feb.jpg");
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover; }
-    main.month_2 ol li {
-      background-color: rgba(255, 255, 255, 0.25); }
-      main.month_2 ol li:hover {
-        background-color: white; }
+
+.month_1 {
+  background-image: url("../img/kerr-janOffice.jpg");
+  background-image: url("../img/kerr-janOffice.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  counter-reset: ol; }
+  .month_1 ol li {
+    background-color: rgba(0, 65, 38, 0.55); }
+    .month_1 ol li:hover {
+      background-color: #004126; }
+    .month_1 ol li:after {
+      content: counter(ol);
+      counter-increment: ol;
+      position: absolute;
+      bottom: -.75em;
+      right: .25em; }
+  .month_1 li:nth-of-type(32),
+  .month_1 :nth-of-type(33),
+  .month_1 :nth-of-type(34),
+  .month_1 :nth-of-type(35) {
+    background-color: rgba(0, 65, 38, 0); }
+    .month_1 li:nth-of-type(32):hover,
+    .month_1 :nth-of-type(33):hover,
+    .month_1 :nth-of-type(34):hover,
+    .month_1 :nth-of-type(35):hover {
+      background-color: rgba(0, 65, 38, 0); }
+  .month_1 li:nth-of-type(32):after,
+  .month_1 :nth-of-type(33):after,
+  .month_1 :nth-of-type(34):after,
+  .month_1 :nth-of-type(35):after {
+    content: " "; }
+
+.month_2 {
+  background-image: url("../img/kerr-feb.jpg");
+  background-image: url("../img/kerr-feb.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .month_2 ol {
+    counter-reset: li -3; }
+  .month_2 ol li {
+    background-color: rgba(153, 136, 68, 0.45); }
+    .month_2 ol li:hover {
+      background-color: #998844; }
+  .month_2 li:after {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    bottom: -.75em;
+    right: .25em; }
+  .month_2 li:nth-of-type(1),
+  .month_2 :nth-of-type(2),
+  .month_2 :nth-of-type(3),
+  .month_2 :nth-of-type(32),
+  .month_2 :nth-of-type(33),
+  .month_2 :nth-of-type(34),
+  .month_2 :nth-of-type(35) {
+    background-color: rgba(0, 65, 38, 0); }
+    .month_2 li:nth-of-type(1):hover,
+    .month_2 :nth-of-type(2):hover,
+    .month_2 :nth-of-type(3):hover,
+    .month_2 :nth-of-type(32):hover,
+    .month_2 :nth-of-type(33):hover,
+    .month_2 :nth-of-type(34):hover,
+    .month_2 :nth-of-type(35):hover {
+      background-color: rgba(0, 65, 38, 0); }
+  .month_2 li:nth-of-type(1):after,
+  .month_2 :nth-of-type(2):after,
+  .month_2 :nth-of-type(3):after,
+  .month_2 :nth-of-type(32):after,
+  .month_2 :nth-of-type(33):after,
+  .month_2 :nth-of-type(34):after,
+  .month_2 :nth-of-type(35):after {
+    content: " "; }
 
 .monthArrows {
   width: 100%;

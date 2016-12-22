@@ -4,13 +4,32 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/app.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
     <title>Kerr Calendar</title>
   </head>
   <body>
+
+
+<nav class="js-menu sliding-panel-content">
+  <ul>
+    <li><a href="javascript:void(0)">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><path d="M278.86,1.76H21.33A19.94,19.94,0,0,0,1.42,21.67V279.25a19.94,19.94,0,0,0,19.92,19.92H278.86a19.94,19.94,0,0,0,19.92-19.92V21.67A19.94,19.94,0,0,0,278.86,1.76ZM102.71,129.84l-14,23.11,14,23.11v74.12H66.23l-11.8,0a5.08,5.08,0,0,1-5.08-5.08V222.46a5.09,5.09,0,0,1,5.08-5.09h11.8V88.47H54.43a5.08,5.08,0,0,1-5.08-5.08V60.78a5.09,5.09,0,0,1,5.08-5.08H90.85l.4,0h11.46Zm128.69,115a5.09,5.09,0,0,1-5.09,5.09H165.93l-59-97.23,59-97.23h23.56l.4,0h36.42a5.09,5.09,0,0,1,5.09,5.08V83.18a5.09,5.09,0,0,1-5.09,5.09h-4.08l-37,0-38.52,64.42,38.52,64.4h37l4.08,0a5.08,5.08,0,0,1,5.09,5.08Zm12.46-74.58H221.73l-11.06-17.62L221.73,135h22.12l11.06,17.63Z" style="fill:#984"/></svg>
+    </a></li>
+    <li><a href="javascript:void(0)">Item 2</a></li>
+    <li><a href="javascript:void(0)">Item 3</a></li>
+  </ul>
+</nav>
+
+<div class="js-menu-screen sliding-panel-fade-screen"></div>
+
     <header>
       <div class="navBar">
-        <span class="logo"><a href="http://www.kerrcontractors.com/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><path d="M278.86,1.76H21.33A19.94,19.94,0,0,0,1.42,21.67V279.25a19.94,19.94,0,0,0,19.92,19.92H278.86a19.94,19.94,0,0,0,19.92-19.92V21.67A19.94,19.94,0,0,0,278.86,1.76ZM102.71,129.84l-14,23.11,14,23.11v74.12H66.23l-11.8,0a5.08,5.08,0,0,1-5.08-5.08V222.46a5.09,5.09,0,0,1,5.08-5.09h11.8V88.47H54.43a5.08,5.08,0,0,1-5.08-5.08V60.78a5.09,5.09,0,0,1,5.08-5.08H90.85l.4,0h11.46Zm128.69,115a5.09,5.09,0,0,1-5.09,5.09H165.93l-59-97.23,59-97.23h23.56l.4,0h36.42a5.09,5.09,0,0,1,5.09,5.08V83.18a5.09,5.09,0,0,1-5.09,5.09h-4.08l-37,0-38.52,64.42,38.52,64.4h37l4.08,0a5.08,5.08,0,0,1,5.09,5.08Zm12.46-74.58H221.73l-11.06-17.62L221.73,135h22.12l11.06,17.63Z" style="fill:#984"/></svg></a></span>
-        <span class="name"><svg width="391px" height="31px" viewBox="0 0 391 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <span class="logo"><a href="http://www.kerrcontractors.com/">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><path d="M278.86,1.76H21.33A19.94,19.94,0,0,0,1.42,21.67V279.25a19.94,19.94,0,0,0,19.92,19.92H278.86a19.94,19.94,0,0,0,19.92-19.92V21.67A19.94,19.94,0,0,0,278.86,1.76ZM102.71,129.84l-14,23.11,14,23.11v74.12H66.23l-11.8,0a5.08,5.08,0,0,1-5.08-5.08V222.46a5.09,5.09,0,0,1,5.08-5.09h11.8V88.47H54.43a5.08,5.08,0,0,1-5.08-5.08V60.78a5.09,5.09,0,0,1,5.08-5.08H90.85l.4,0h11.46Zm128.69,115a5.09,5.09,0,0,1-5.09,5.09H165.93l-59-97.23,59-97.23h23.56l.4,0h36.42a5.09,5.09,0,0,1,5.09,5.08V83.18a5.09,5.09,0,0,1-5.09,5.09h-4.08l-37,0-38.52,64.42,38.52,64.4h37l4.08,0a5.08,5.08,0,0,1,5.09,5.08Zm12.46-74.58H221.73l-11.06-17.62L221.73,135h22.12l11.06,17.63Z" style="fill:#984"/></svg>
+        </a></span>
+        <span class="name">
+          <svg width="391px" height="31px" viewBox="0 0 391 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g id="kerrWordLogoKern" fill="#FFFFFF">
                     <g id="Group">
@@ -33,12 +52,21 @@
                     </g>
                 </g>
             </g>
-        </svg></span>
-        <ul>
-        <li><a href="#" class="leftArrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><path d="M186.22,281a6.54,6.54,0,0,1-6.54,6.54h-5.24l-71.36-9-75.87-125,75.87-125,77.59-8a6.54,6.54,0,0,1,6.54,6.53V56.21a6.54,6.54,0,0,1-6.54,6.54l-5.24,1-47.52,7.06L78.41,153.6l49.51,82.77,47.52,7,5.24,1.06a6.53,6.53,0,0,1,6.54,6.53Z" style="fill:#fff"/></svg></a></li>
-        <li><a href="#" class="ellipse"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><polygon points="48.94 165.45 16.98 165.45 1 139.99 16.98 114.53 48.94 114.53 64.92 139.99 48.94 165.45" style="fill:#fff"/><polygon points="165.98 165.45 134.02 165.45 118.04 139.99 134.02 114.53 165.98 114.53 181.96 139.99 165.98 165.45" style="fill:#fff"/><polygon points="283.02 165.45 251.06 165.45 235.08 139.99 251.06 114.53 283.02 114.53 299 139.99 283.02 165.45" style="fill:#fff"/></svg></a></li>
-        <li><a href="#" class="rtArrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><path d="M106.78,251a6.53,6.53,0,0,1,6.54-6.53l5.24-1.06,47.52-7,49.51-82.77L166.08,70.81l-47.52-7.06-5.24-1a6.54,6.54,0,0,1-6.54-6.54V27.15a6.54,6.54,0,0,1,6.54-6.53l77.59,8,75.87,125-75.87,125-71.36,9h-5.24a6.54,6.54,0,0,1-6.54-6.54Z" style="fill:#fff"/></svg></a></li>
-        </ul>
+        </svg>
+      </span>
+      <div class="dropdown">
+        <div class="dropdown-container">
+          <ul class="dropdown-menu dropdown-select">
+            <li><span class="logo">item></li>
+            <li>Another Item</li>
+            <li>Item Three</li>
+            <li>The Last One</li>
+          </ul>
+        </div>
+      </div>
+
+<span class="arrows"><a href="#" class="leftArrow js-menu-trigger sliding-panel-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><path d="M186.22,281a6.54,6.54,0,0,1-6.54,6.54h-5.24l-71.36-9-75.87-125,75.87-125,77.59-8a6.54,6.54,0,0,1,6.54,6.53V56.21a6.54,6.54,0,0,1-6.54,6.54l-5.24,1-47.52,7.06L78.41,153.6l49.51,82.77,47.52,7,5.24,1.06a6.53,6.53,0,0,1,6.54,6.53Z" style="fill:#fff"/></svg></a>
+        <a href="#" class="ellipse js-menu-trigger sliding-panel-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><polygon points="48.94 165.45 16.98 165.45 1 139.99 16.98 114.53 48.94 114.53 64.92 139.99 48.94 165.45" style="fill:#fff"/><polygon points="165.98 165.45 134.02 165.45 118.04 139.99 134.02 114.53 165.98 114.53 181.96 139.99 165.98 165.45" style="fill:#fff"/><polygon points="283.02 165.45 251.06 165.45 235.08 139.99 251.06 114.53 283.02 114.53 299 139.99 283.02 165.45" style="fill:#fff"/></svg></a><a href="#" class="rtArrow js-menu-trigger sliding-panel-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><path d="M106.78,251a6.53,6.53,0,0,1,6.54-6.53l5.24-1.06,47.52-7,49.51-82.77L166.08,70.81l-47.52-7.06-5.24-1a6.54,6.54,0,0,1-6.54-6.54V27.15a6.54,6.54,0,0,1,6.54-6.53l77.59,8,75.87,125-75.87,125-71.36,9h-5.24a6.54,6.54,0,0,1-6.54-6.54Z" style="fill:#fff"/></svg></a></span>
       </div>
     </header>
 

@@ -2,13 +2,12 @@
 
 footer {
   width: 100vw;
-  height: 10vh;
+  height: 6vh;
   position: fixed;
   left:0;
   bottom:0;
   background-color: $kerrGreen;
   @include filter(drop-shadow(-3px 0px 4px rgba(255,255,255,0.1)));
-  padding: .5em;
   z-index: 1000;
 }
 .notificationBar {
@@ -19,7 +18,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 1em;
+  padding: 0 2em 3em 1em;
   svg {
     height: 1.75em;
   }

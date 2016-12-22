@@ -11,11 +11,11 @@ main ol li {
     @include transition(padding 0.5 0.5 ease-out, font-size 0.5s 0.1s ease-out, color 0.5s 0.1s ease-out, background-color 0.5s 0.1s ease-in-out);
     @include transform-origin(0% 0%);
     background-color: rgba($kerrGreen, 0.85);
-    width:16%;
+    width:1.5em;
     font-family: 'ITCOfficinaSerifStdBookRg', $georgia, serif;
     font-weight: normal;
-    font-size: 1em;
-    line-height: 1.33;
+    font-size: 1.2em;
+    line-height: 2;
     color: $white;
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 0px $black;
@@ -24,22 +24,9 @@ main ol li {
     position:absolute;
     bottom: 0em;
     right:0em;
-    padding: 0 -1em 0 1em;
+    padding: 0 0em 0 0em;
     border-radius: em(6px);
     text-align: center;
-  }
-  &:before {
-    font-family: 'ITCOfficinaSerifStdBookRg', $georgia, serif;
-    font-weight: normal;
-    font-size: 1em;
-    line-height: (2 * 1.333);
-    color: $white;
-    -webkit-font-smoothing: antialiased;
-    text-shadow: 1px 1px 0px $black;
-    position:absolute;
-    bottom: 0em;
-    right:0em;
-    padding: 0 .5em;
   }
 }
 ol li:hover {

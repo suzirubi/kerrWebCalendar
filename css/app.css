@@ -481,7 +481,7 @@ header {
   .month_2 ol {
     counter-reset: li -3; }
   .month_2 ol li {
-    background-color: rgba(153, 136, 68, 0.65); }
+    background-color: rgba(153, 136, 68, 0.45); }
     .month_2 ol li:hover {
       background-color: #998844; }
   .month_2 li:after {
@@ -524,7 +524,7 @@ header {
   .month_3 ol {
     counter-reset: li -3; }
   .month_3 ol li {
-    background-color: rgba(153, 136, 68, 0.65); }
+    background-color: rgba(153, 136, 68, 0.45); }
     .month_3 ol li:hover {
       background-color: #998844; }
   .month_3 ol li:after {
@@ -558,7 +558,7 @@ header {
   .month_4 ol {
     counter-reset: li -6; }
   .month_4 ol li {
-    background-color: rgba(153, 136, 68, 0.65); }
+    background-color: rgba(153, 136, 68, 0.45); }
     .month_4 ol li:hover {
       background-color: #998844; }
   .month_4 ol li:after {
@@ -674,9 +674,9 @@ header {
   .month_7 ol {
     counter-reset: li -6; }
   .month_7 ol li {
-    background-color: rgba(153, 136, 68, 0.65); }
+    background-color: rgba(0, 65, 38, 0.45); }
     .month_7 ol li:hover {
-      background-color: #998844; }
+      background-color: #004126; }
   .month_7 ol li:after {
     content: counter(li);
     counter-increment: li;
@@ -724,9 +724,9 @@ header {
   .month_8 ol {
     counter-reset: li -2; }
   .month_8 ol li {
-    background-color: rgba(153, 136, 68, 0.65); }
+    background-color: rgba(0, 65, 38, 0.45); }
     .month_8 ol li:hover {
-      background-color: #998844; }
+      background-color: #004126; }
   .month_8 ol li:after {
     content: counter(li);
     counter-increment: li;
@@ -866,9 +866,9 @@ header {
   .month_12 ol {
     counter-reset: li -5; }
   .month_12 ol li {
-    background-color: rgba(153, 136, 68, 0.55); }
+    background-color: rgba(0, 65, 38, 0.35); }
     .month_12 ol li:hover {
-      background-color: #998844; }
+      background-color: #004126; }
   .month_12 ol li:after {
     content: counter(li);
     counter-increment: li;

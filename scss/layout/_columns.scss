@@ -1,21 +1,21 @@
 // Begin specific month layout styling
-main ol li {
-  border-bottom-right-radius: 6px;
-}
+
 main ol li {
   @include transition(border-right 0.0s 0.0s ease-in-out, border-bottom 0.0s 0.0s ease-in-out, background-color .5s .1s ease-in-out);
   @include transform-origin(0% 0%);
   background-color: rgba($white, 0.0);
+  border-bottom-right-radius: 6px;
   border-right: 0.5px solid rgba($white, 0.25);
   border-bottom: 0.5px solid rgba($white, 0.25);
   &:after {
-    @include transition(font-size 0.5s 0.1s ease-out, color 0.5s 0.1s ease-out, background-color 0.5s 0.1s ease-in-out);
+    @include transition(padding 0.5 0.5 ease-out, font-size 0.5s 0.1s ease-out, color 0.5s 0.1s ease-out, background-color 0.5s 0.1s ease-in-out);
     @include transform-origin(0% 0%);
+    background-color: rgba($kerrGreen, 0.85);
     width:16%;
     font-family: 'ITCOfficinaSerifStdBookRg', $georgia, serif;
     font-weight: normal;
     font-size: 1em;
-    line-height: (2 * 1.333);
+    line-height: 1.33;
     color: $white;
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 0px $black;
@@ -26,7 +26,6 @@ main ol li {
     right:0em;
     padding: 0 -1em 0 1em;
     border-radius: em(6px);
-    background-color: rgba($kerrGreen, 0.85);
     text-align: center;
   }
   &:before {
@@ -49,17 +48,52 @@ ol li:hover {
   @include transform(border-bottom);
   border-right: 0px solid rgba($white, 0.0);
   border-bottom: 0px solid rgba($white, 0.0);
-  background-color: rgba($white, 0.5);
+  background-color: rgba($white, 0.65);
   &:after {
   @include transform(color);
   @include transform(font-size);
+  @include transform(padding);
     color: $kerrAccent;
     font-size: 1.7em;
-    padding:-1em;
+    padding: 0 1.5em 0 1em;
     background-color: rgba($kerrGreen, 0.0);
   }
 }
-
+ol li:hover:nth-of-type(32),
+    :hover:nth-of-type(32),
+    :hover:nth-of-type(33),
+    :hover:nth-of-type(34),
+    :hover:nth-of-type(35),
+    :hover:nth-of-type(36),
+    :hover:nth-of-type(37),
+    :hover:nth-of-type(38),
+    :hover:nth-of-type(39),
+    :hover:nth-of-type(40),
+    :hover:nth-of-type(41),
+    :hover:nth-of-type(42) {
+  @include transform(background-color);
+  @include transform(border-right);
+  @include transform(border-bottom);
+  border-right: 0px solid rgba($white, 0.0);
+  border-bottom: 0px solid rgba($white, 0.0);
+  background-color: rgba($white, 0.0);
+}
+ol li
+ol li:nth-of-type(32),
+    :nth-of-type(33),
+    :nth-of-type(34),
+    :nth-of-type(35),
+    :nth-of-type(36),
+    :nth-of-type(37),
+    :nth-of-type(38),
+    :nth-of-type(39),
+    :nth-of-type(40),
+    :nth-of-type(41),
+    :nth-of-type(42) {
+    content: " ";
+    border-right:0px;
+    border-bottom:0px;
+}
 ol li:nth-of-type(38):after,
   :nth-of-type(39):after,
   :nth-of-type(40):after,
@@ -71,24 +105,93 @@ ol li:nth-of-type(38):after,
 }
 .month_1 {
   @include background-image(url("../img/kerr-janOffice.jpg"));
-  & ol {
+  ol {
     counter-reset: li 0;
   }
-  & ol li:nth-of-type(36):after,
-     :nth-of-type(37):after {
+  ol li:nth-of-type(32) {
+       content: " ";
+       border-right:0px;
+       border-bottom:0px;
+  }
+  ol li:hover:nth-of-type(32):after,
+      :hover:nth-of-type(32):after,
+      :hover:nth-of-type(33):after,
+      :hover:nth-of-type(34):after,
+      :hover:nth-of-type(35):after,
+      :hover:nth-of-type(36):after,
+      :hover:nth-of-type(37):after,
+      :hover:nth-of-type(38):after,
+      :hover:nth-of-type(39):after,
+      :hover:nth-of-type(40):after,
+      :hover:nth-of-type(41):after,
+      :hover:nth-of-type(42):after {
+    background-color: rgba($white, 0.0);
+  }
+  ol li:nth-of-type(32):after,
+          :nth-of-type(33):after,
+          :nth-of-type(34):after,
+          :nth-of-type(35):after,
+          :nth-of-type(36):after,
+          :nth-of-type(37):after {
        content: " ";
        border-right:0px;
        border-bottom:0px;
   }
 }
 
+
 .month_2 {
   @include background-image(url("../img/kerr-feb.jpg"));
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  & ol {
+  ol {
     counter-reset: li -3;
+  }
+  ol li {
+    @include transition(background-color 0.5s 0.0s ease-in-out);
+    background-color: rgba($white, 0.0);
+  }
+  ol li:hover {
+    @include transform(background-color);
+    background-color: rgba($white, 0.85);
+  }
+  li:hover:nth-of-type(1),
+        :hover:nth-of-type(2),
+        :hover:nth-of-type(3),
+        :hover:nth-of-type(32),
+        :hover:nth-of-type(33),
+        :hover:nth-of-type(34),
+        :hover:nth-of-type(35),
+        :hover:nth-of-type(36),
+        :hover:nth-of-type(37),
+        :hover:nth-of-type(38),
+        :hover:nth-of-type(39),
+        :hover:nth-of-type(40),
+        :hover:nth-of-type(41),
+        :hover:nth-of-type(42) {
+      @include transform(background-color);
+      background-color: rgba($white, 0.0);
+  }
+  ol li:nth-of-type(1),
+        :nth-of-type(2),
+        :nth-of-type(3),
+        :nth-of-type(32) {
+         border-right:0px;
+         border-bottom:0px;
+  }
+  ol li:nth-of-type(1):after,
+          :nth-of-type(2):after,
+          :nth-of-type(3):after,
+          :nth-of-type(32):after,
+          :nth-of-type(33):after,
+          :nth-of-type(34):after,
+          :nth-of-type(35):after,
+          :nth-of-type(36):after,
+          :nth-of-type(37):after {
+       content: " ";
+       border-right:0px;
+       border-bottom:0px;
   }
 }
 .month_3 {
@@ -96,8 +199,53 @@ ol li:nth-of-type(38):after,
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  & ol {
+  ol {
     counter-reset: li -3;
+  }
+  ol li {
+    @include transition(background-color 0.5s 0.0s ease-in-out);
+    background-color: rgba($white, 0.0);
+  }
+  ol li:hover {
+    @include transform(background-color);
+    background-color: rgba($white, 0.85);
+  }
+  li:hover:nth-of-type(1),
+        :hover:nth-of-type(2),
+        :hover:nth-of-type(3),
+        :hover:nth-of-type(35),
+        :hover:nth-of-type(36),
+        :hover:nth-of-type(37),
+        :hover:nth-of-type(38),
+        :hover:nth-of-type(39),
+        :hover:nth-of-type(40),
+        :hover:nth-of-type(41),
+        :hover:nth-of-type(42) {
+      @include transform(background-color);
+      background-color: rgba($white, 0.0);
+  }
+  ol li:nth-of-type(32),
+        :nth-of-type(33),
+        :nth-of-type(34) {
+          border-right: 0.5px solid rgba($white, 0.25);
+          border-bottom: 0.5px solid rgba($white, 0.25);
+  }
+  ol li:nth-of-type(1),
+        :nth-of-type(2),
+        :nth-of-type(3),
+        :nth-of-type(35) {
+         border-right:0px;
+         border-bottom:0px;
+  }
+  ol li:nth-of-type(1):after,
+          :nth-of-type(2):after,
+          :nth-of-type(3):after,
+          :nth-of-type(35):after,
+          :nth-of-type(36):after,
+          :nth-of-type(37):after {
+       content: " ";
+       border-right:0px;
+       border-bottom:0px;
   }
 }
 

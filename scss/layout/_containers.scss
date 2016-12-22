@@ -17,7 +17,7 @@ main {
   justify-content: space-between;
   margin-top: .25em;
   svg {
-    @include filter(opacity(0.4));
+    @include filter(opacity(0.9));
     width:1.75em;
     padding-top: .75em;
   }

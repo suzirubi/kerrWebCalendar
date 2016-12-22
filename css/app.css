@@ -341,8 +341,8 @@ main {
   justify-content: space-between;
   margin-top: .25em; }
   .monthArrows svg {
-    -webkit-filter: opacity(0.4);
-    filter: opacity(0.4);
+    -webkit-filter: opacity(0.9);
+    filter: opacity(0.9);
     width: 1.75em;
     padding-top: .75em; }
 

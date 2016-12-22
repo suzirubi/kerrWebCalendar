@@ -3,90 +3,11 @@ main {
   height: 100vh;
   padding: 10vh 3vw 20vh 1vw;
   overflow:hidden;
-}
-// Begin specific month layout styling
-.month_1 {
-  @include background-image(url("../img/kerr-janOffice.jpg"));
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  counter-reset: ol;
-  & ol li {
-    background-color: rgba($kerrGreen, 0.55);
-    &:hover {
-      background-color: rgba($kerrGreen, 1);
-    }
-    &:after {
-      content: counter(ol);
-      counter-increment: ol;
-      position:absolute;
-      bottom: -.75em;
-      right:.25em;
-    }
-  }
-  & li:nth-of-type(32),
-    :nth-of-type(33),
-    :nth-of-type(34),
-    :nth-of-type(35) {
-    background-color: rgba($kerrGreen, 0.0);
-    &:hover {
-      background-color: rgba($kerrGreen, 0);
-    }
-  }
-  & li:nth-of-type(32):after,
-    :nth-of-type(33):after,
-    :nth-of-type(34):after,
-    :nth-of-type(35):after {
-    content: " ";
-  }
 }
 
-.month_2 {
-  @include background-image(url("../img/kerr-feb.jpg"));
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  & ol {
-    counter-reset: li -3;
-  }
-  & ol li {
-    background-color: rgba($kerrGold, 0.45);
-    &:hover {
-      background-color: rgba($kerrGold, 1);
-    }
-  }
-  li:after {
-      content: counter(li);
-      counter-increment: li;
-      position:absolute;
-      bottom: -.75em;
-      right:.25em;
-  }
-  & li:nth-of-type(1),
-    :nth-of-type(2),
-    :nth-of-type(3),
-    :nth-of-type(32),
-    :nth-of-type(33),
-    :nth-of-type(34),
-    :nth-of-type(35) {
-    background-color: rgba($kerrGreen, 0.0);
-    &:hover {
-      background-color: rgba($kerrGreen, 0);
-    }
-  }
-  & li:nth-of-type(1):after,
-    :nth-of-type(2):after,
-    :nth-of-type(3):after,
-    :nth-of-type(32):after,
-    :nth-of-type(33):after,
-    :nth-of-type(34):after,
-    :nth-of-type(35):after {
-    content: " ";
-  }
-}
-
-
-// End month layout styling
 // Begin main month container styling
 .monthArrows {
   width: 100%;

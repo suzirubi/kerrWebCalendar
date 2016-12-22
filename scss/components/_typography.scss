@@ -113,6 +113,18 @@ main ol li {
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 0px $black;
   }
+  &:before {
+    font-family: 'ITCOfficinaSerifStdBookRg', $georgia, serif;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: (2 * 1.333);
+    color: $white;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 0px $black;
+    position:absolute;
+    bottom: -.75em;
+    right:.25em;
+  }
 }
 
 

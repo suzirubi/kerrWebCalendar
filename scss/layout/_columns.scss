@@ -1,9 +1,6 @@
 // Begin specific month layout styling
 .month_1 {
   @include background-image(url("../img/kerr-janOffice.jpg"));
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
   counter-reset: ol;
   & ol li {
     background-color: rgba($kerrGreen, 0.55);
@@ -24,10 +21,10 @@
     :nth-of-type(35) {
     background-color: rgba($kerrGreen, 0.0);
     &:hover {
-      background-color: rgba($kerrGreen, 0);
+    background-color: rgba($kerrGreen, 0);
     }
   }
-  & li:nth-of-type(32):after,
+  li:nth-of-type(32):after,
     :nth-of-type(33):after,
     :nth-of-type(34):after,
     :nth-of-type(35):after {
@@ -44,7 +41,7 @@
     counter-reset: li -3;
   }
   & ol li {
-    background-color: rgba($kerrGold, 0.45);
+    background-color: rgba($kerrGold, 0.65);
     &:hover {
       background-color: rgba($kerrGold, 1);
     }
@@ -63,9 +60,9 @@
     :nth-of-type(33),
     :nth-of-type(34),
     :nth-of-type(35) {
-    background-color: rgba($kerrGreen, 0.0);
+    background-color: rgba($kerrGold, 0.0);
     &:hover {
-      background-color: rgba($kerrGreen, 0);
+      background-color: rgba($kerrGold, 0);
     }
   }
   & li:nth-of-type(1):after,
@@ -78,6 +75,416 @@
     content: " ";
   }
 }
+.month_3 {
+  @include background-image(url("../img/kerr-marParkingLot.jpg"));
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  & ol {
+    counter-reset: li -3;
+  }
+  & ol li {
+    background-color: rgba($kerrGold, 0.65);
+    &:hover {
+      background-color: rgba($kerrGold, 1);
+    }
+  }
+  & ol li:after {
+      content: counter(li);
+      counter-increment: li;
+      position:absolute;
+      bottom: -.75em;
+      right:.25em;
+  }
+  & li:nth-of-type(1),
+    :nth-of-type(2),
+    :nth-of-type(3),
+    :nth-of-type(35) {
+    background-color: rgba($kerrGold, 0.0);
+    &:hover {
+      background-color: rgba($kerrGold, 0);
+    }
+  }
+  & li:nth-of-type(1):after,
+    :nth-of-type(2):after,
+    :nth-of-type(3):after,
+    :nth-of-type(35):after {
+    content: " ";
+  }
+}
 
+.month_4 {
+  @include background-image(url("../img/kerr-april.jpg"));
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  & ol {
+    counter-reset: li -6;
+  }
+  & ol li {
+    background-color: rgba($kerrGold, 0.65);
+    &:hover {
+      background-color: rgba($kerrGold, 1);
+    }
+  }
+  & ol li:after {
+      content: counter(li);
+      counter-increment: li;
+      position:absolute;
+      bottom: -.75em;
+      right:.25em;
+  }
+  & ol li:nth-of-type(35):before {
+          content: "29/30";
+          bottom: -.75em;
+          right:.25em;
+  }
+  & li:nth-of-type(1),
+    :nth-of-type(2),
+    :nth-of-type(3),
+    :nth-of-type(4),
+    :nth-of-type(5),
+    :nth-of-type(6), {
+    background-color: rgba($kerrGold, 0.0);
+    &:hover {
+      background-color: rgba($kerrGold, 0);
+    }
+  }
+  & li:nth-of-type(1):after,
+    :nth-of-type(2):after,
+    :nth-of-type(3):after,
+    :nth-of-type(4):after,
+    :nth-of-type(5):after,
+    :nth-of-type(6):after,
+    :nth-of-type(35):after {
+    content: " ";
+  }
+}
+.month_5 {
+  @include background-image(url("../img/kerr-mayDust.jpg"));
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  & ol {
+    counter-reset: li -1;
+  }
+  & ol li {
+    background-color: rgba($kerrGreen, 0.35);
+    &:hover {
+      background-color: rgba($kerrGreen, 1);
+    }
+  }
+  & ol li:after {
+      content: counter(li);
+      counter-increment: li;
+      position:absolute;
+      bottom: -.75em;
+      right:.25em;
+  }
+  & li:nth-of-type(1),
+    :nth-of-type(33),
+    :nth-of-type(34),
+    :nth-of-type(35) {
+    background-color: rgba($kerrGreen, 0.0);
+    &:hover {
+      background-color: rgba($kerrGreen, 0);
+    }
+  }
+  & li:nth-of-type(1):after,
+    :nth-of-type(33):after,
+    :nth-of-type(34):after,
+    :nth-of-type(35):after {
+    content: " ";
+  }
+}
+.month_6 {
+  @include background-image(url("../img/kerr-juneDirt.jpg"));
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  & ol {
+    counter-reset: li -4;
+  }
+  & ol li {
+    background-color: rgba($kerrGreen, 0.35);
+    &:hover {
+      background-color: rgba($kerrGreen, 1);
+    }
+  }
+  & ol li:after {
+      content: counter(li);
+      counter-increment: li;
+      position:absolute;
+      bottom: -.75em;
+      right:.25em;
+  }
+  & li:nth-of-type(1),
+    :nth-of-type(2),
+    :nth-of-type(3),
+    :nth-of-type(4),
+    :nth-of-type(35) {
+    background-color: rgba($kerrGreen, 0.0);
+    &:hover {
+      background-color: rgba($kerrGreen, 0);
+    }
+  }
+  & li:nth-of-type(1):after,
+    :nth-of-type(2):after,
+    :nth-of-type(3):after,
+    :nth-of-type(4):after,
+    :nth-of-type(35):after {
+    content: " ";
+  }
+}
+.month_7 {
+  @include background-image(url("../img/kerr-julySky.jpg"));
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  & ol {
+    counter-reset: li -6;
+  }
+  & ol li {
+    background-color: rgba($kerrGold, 0.65);
+    &:hover {
+      background-color: rgba($kerrGold, 1);
+    }
+  }
+  & ol li:after {
+      content: counter(li);
+      counter-increment: li;
+      position:absolute;
+      bottom: -.75em;
+      right:.25em;
+  }
+  & ol li:nth-of-type(29):before {
+    content: "24/30";
+    bottom: -.75em;
+    right:.25em;
+  }
+  & ol li:nth-of-type(30):before {
+    content: "25/31";
+    bottom: -.75em;
+    right:.25em;
+  }
+  & li:nth-of-type(1),
+    :nth-of-type(2),
+    :nth-of-type(3),
+    :nth-of-type(4),
+    :nth-of-type(5),
+    :nth-of-type(6), {
+    background-color: rgba($kerrGold, 0.0);
+    &:hover {
+      background-color: rgba($kerrGold, 0);
+    }
+  }
+  & li:nth-of-type(1):after,
+    :nth-of-type(2):after,
+    :nth-of-type(3):after,
+    :nth-of-type(4):after,
+    :nth-of-type(5):after,
+    :nth-of-type(6):after,
+    :nth-of-type(29):after,
+    :nth-of-type(30):after {
+    content: " ";
+  }
+}
+.month_8 {
+  @include background-image(url("../img/kerr-augustBridge.jpg"));
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  & ol {
+    counter-reset: li -2;
+  }
+  & ol li {
+    background-color: rgba($kerrGold, 0.65);
+    &:hover {
+      background-color: rgba($kerrGold, 1);
+    }
+  }
+  & ol li:after {
+      content: counter(li);
+      counter-increment: li;
+      position:absolute;
+      bottom: -.75em;
+      right:.25em;
+  }
+  & li:nth-of-type(1),
+    :nth-of-type(2),
+    :nth-of-type(34),
+    :nth-of-type(35) {
+    background-color: rgba($kerrGold, 0.0);
+    &:hover {
+      background-color: rgba($kerrGold, 0);
+    }
+  }
+  & li:nth-of-type(1):after,
+    :nth-of-type(2):after,
+    :nth-of-type(34):after,
+    :nth-of-type(35):after {
+    content: " ";
+  }
+}
+.month_9 {
+  @include background-image(url("../img/kerr-septNight.jpg"));
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  & ol {
+    counter-reset: li -5;
+  }
+  & ol li {
+    background-color: rgba($black, 0.35);
+    &:hover {
+      background-color: rgba($black, 1);
+    }
+  }
+  & ol li:after {
+      content: counter(li);
+      counter-increment: li;
+      position:absolute;
+      bottom: -.75em;
+      right:.25em;
+  }
+  & li:nth-of-type(1),
+    :nth-of-type(2),
+    :nth-of-type(3),
+    :nth-of-type(4),
+    :nth-of-type(5) {
+    background-color: rgba($black, 0.0);
+    &:hover {
+      background-color: rgba($black, 0);
+    }
+  }
+  & li:nth-of-type(1):after,
+    :nth-of-type(2):after,
+    :nth-of-type(3):after,
+    :nth-of-type(4):after,
+    :nth-of-type(5):after {
+    content: " ";
+  }
+}
+.month_10 {
+  @include background-image(url("../img/kerr-octSwamp.jpg"));
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  & ol {
+    counter-reset: li 0;
+  }
+  & ol li {
+    background-color: rgba($kerrGreen, 0.55);
+    &:hover {
+      background-color: rgba($kerrGreen, 1);
+    }
+  }
+  & ol li:after {
+      content: counter(li);
+      counter-increment: li;
+      position:absolute;
+      bottom: -.75em;
+      right:.25em;
+  }
+  & li:nth-of-type(32),
+    :nth-of-type(33),
+    :nth-of-type(34),
+    :nth-of-type(35) {
+    background-color: rgba($kerrGreen, 0.0);
+    &:hover {
+      background-color: rgba($kerrGreen, 0);
+    }
+  }
+  & li:nth-of-type(32):after,
+    :nth-of-type(33):after,
+    :nth-of-type(34):after,
+    :nth-of-type(35):after {
+    content: " ";
+  }
+}
+.month_11 {
+  @include background-image(url("../img/kerr-novRoad.jpg"));
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  & ol {
+    counter-reset: li -3;
+  }
+  & ol li {
+    background-color: rgba($kerrGold, 0.55);
+    &:hover {
+      background-color: rgba($kerrGold, 1);
+    }
+  }
+  & ol li:after {
+      content: counter(li);
+      counter-increment: li;
+      position:absolute;
+      bottom: -.75em;
+      right:.25em;
+  }
+  & li:nth-of-type(1),
+    :nth-of-type(2),
+    :nth-of-type(3),
+    :nth-of-type(34),
+    :nth-of-type(35) {
+    background-color: rgba($kerrGold, 0.0);
+    &:hover {
+      background-color: rgba($kerrGold, 0);
+    }
+  }
+  & li:nth-of-type(1):after,
+    :nth-of-type(2):after,
+    :nth-of-type(3):after,
+    :nth-of-type(34):after,
+    :nth-of-type(35):after {
+    content: " ";
+  }
+}
+.month_12 {
+  @include background-image(url("../img/kerr-decNightRoad.jpg"));
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  & ol {
+    counter-reset: li -5;
+  }
+  & ol li {
+    background-color: rgba($kerrGold, 0.55);
+    &:hover {
+      background-color: rgba($kerrGold, 1);
+    }
+  }
+  & ol li:after {
+      content: counter(li);
+      counter-increment: li;
+      position:absolute;
+      bottom: -.75em;
+      right:.25em;
+  }
+  & ol li:nth-of-type(35):before {
+          content: "30/31";
+          bottom: -.75em;
+          right:.25em;
+  }
+  & li:nth-of-type(1),
+    :nth-of-type(2),
+    :nth-of-type(3),
+    :nth-of-type(4),
+    :nth-of-type(5) {
+    background-color: rgba($kerrGold, 0.0);
+    &:hover {
+      background-color: rgba($kerrGold, 0);
+    }
+  }
+  & li:nth-of-type(1):after,
+    :nth-of-type(2):after,
+    :nth-of-type(3):after,
+    :nth-of-type(4):after,
+    :nth-of-type(5):after,
+    :nth-of-type(35):after {
+    content: " ";
+  }
+}
 
 // End month layout styling

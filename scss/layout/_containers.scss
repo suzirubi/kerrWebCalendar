@@ -21,8 +21,9 @@ main {
   position: relative;
   top:0;
   left:0;
-  svg {
-    @include filter(opacity(0.9));
+  a svg {
+    // @include filter(opacity(0.9));
+    @include filter(drop-shadow(0px 0px 1px darken($kerrGreen,25%)));
     width:1.75em;
     margin:0;
     padding:0;

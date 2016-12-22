@@ -261,7 +261,16 @@ main h2 {
   font-size: 1.2em;
   line-height: 1;
   color: #003e24;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 0;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.45);
+  padding: .1em .5em .2em .5em;
+  text-shadow: 1px 1px 0px #fff; }
+
+.month_9 h2 {
+  background-color: rgba(11, 11, 11, 0.45);
+  text-shadow: 1px 1px 0px #0b0b0b; }
 
 main ul li {
   font-family: "kulturista", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
@@ -274,46 +283,34 @@ main ul li {
 
 main ul li:first-of-type:before, main ul li:last-of-type:before {
   content: 'S';
-  text-shadow: 0 0 5px #ffffff; }
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.45);
+  padding: 0em .3em;
+  text-shadow: 1px 1px 0px #fff; }
 main ul li:nth-of-type(3):before, main ul li:nth-of-type(5):before {
   content: "T";
-  text-shadow: 0 0 5px #ffffff; }
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.45);
+  padding: 0em .3em;
+  text-shadow: 1px 1px 0px #fff; }
 main ul li:nth-of-type(2):before {
   content: "M";
-  text-shadow: 0 0 5px #ffffff; }
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.45);
+  padding: 0em .3em;
+  text-shadow: 1px 1px 0px #fff; }
 main ul li:nth-of-type(4):before {
   content: "W";
-  text-shadow: 0 0 5px #ffffff; }
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.45);
+  padding: 0em .3em;
+  text-shadow: 1px 1px 0px #fff; }
 main ul li:nth-of-type(6):before {
   content: "F";
-  text-shadow: 0 0 5px #ffffff; }
-
-main ol {
-  counter-reset: item; }
-
-main ol li {
-  width: 100px;
-  height: 100px;
-  position: relative; }
-  main ol li:after {
-    font-family: "ITCOfficinaSerifStdBookRg", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
-    font-weight: normal;
-    font-size: 1em;
-    line-height: 2.666;
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
-    text-shadow: 1px 1px 0px #0b0b0b; }
-  main ol li:before {
-    font-family: "ITCOfficinaSerifStdBookRg", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
-    font-weight: normal;
-    font-size: 1em;
-    line-height: 2.666;
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
-    text-shadow: 1px 1px 0px #0b0b0b;
-    position: absolute;
-    bottom: -.75em;
-    right: .25em; }
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.45);
+  padding: 0em .3em;
+  text-shadow: 1px 1px 0px #fff; }
 
 footer h6 {
   font-family: "ITCOfficinaSerifStdBookRg", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
@@ -327,7 +324,7 @@ footer h6 {
 main {
   width: 100vw;
   height: 100vh;
-  padding: 10vh 3vw 20vh 1vw;
+  padding: 10vh 3vw 0vh 2vw;
   overflow: hidden;
   background-position: center top;
   background-repeat: no-repeat;
@@ -335,55 +332,61 @@ main {
 
 .monthArrows {
   width: 100%;
-  height: 7.14285714285714285%;
+  height: 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: .25em; }
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 0;
+  left: 0; }
   .monthArrows svg {
     -webkit-filter: opacity(0.9);
     filter: opacity(0.9);
     width: 1.75em;
-    padding-top: .75em; }
+    margin: 0;
+    padding: 0; }
 
 main ul {
   width: 100%;
-  height: 3.57143%;
+  height: 5%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   position: relative;
-  margin: .5em 0em; }
+  top: 0;
+  left: 0;
+  margin: 0; }
 
 main ul li {
-  width: 14.2857143%;
-  height: 7.14285714285714285%;
-  padding: 0em 0em 0em .5em; }
+  align-self: center;
+  width: 14%;
+  height: 5%;
+  padding: 0;
+  margin: 0; }
 
 main ol {
   width: 100%;
-  height: 85.71429%;
+  height: 70%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  position: relative; }
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0; }
 
 main ol li {
-  width: 12.2857143%;
-  height: 16.2857143%;
+  width: 14%;
+  height: 16.3%;
   position: relative;
-  margin-right: 1%;
-  margin-bottom: .5em; }
-
-li:nth-child(7),
-:nth-child(14),
-:nth-child(21),
-:nth-child(28),
-:nth-child(35) {
-  margin-right: 0%; }
+  margin: 0;
+  padding: 0; }
 
 header {
   -webkit-filter: drop-shadow(3px 0px 4px #808489);
@@ -442,35 +445,114 @@ header {
     .navBar ul li:last-child {
       margin-left: -.1em; }
 
+main ol li {
+  border-bottom-right-radius: 6px; }
+
+main ol li {
+  -webkit-transition: border-right 0s 0s ease-in-out, border-bottom 0s 0s ease-in-out, background-color 0.5s 0.1s ease-in-out;
+  -moz-transition: border-right 0s 0s ease-in-out, border-bottom 0s 0s ease-in-out, background-color 0.5s 0.1s ease-in-out;
+  transition: border-right 0s 0s ease-in-out, border-bottom 0s 0s ease-in-out, background-color 0.5s 0.1s ease-in-out;
+  -webkit-transform-origin: 0% 0%;
+  -moz-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -o-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  background-color: rgba(255, 255, 255, 0);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.25); }
+  main ol li:after {
+    -webkit-transition: font-size 0.5s 0.1s ease-out, color 0.5s 0.1s ease-out, background-color 0.5s 0.1s ease-in-out;
+    -moz-transition: font-size 0.5s 0.1s ease-out, color 0.5s 0.1s ease-out, background-color 0.5s 0.1s ease-in-out;
+    transition: font-size 0.5s 0.1s ease-out, color 0.5s 0.1s ease-out, background-color 0.5s 0.1s ease-in-out;
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    width: 16%;
+    font-family: "ITCOfficinaSerifStdBookRg", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 2.666;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 0px #0b0b0b;
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    bottom: 0em;
+    right: 0em;
+    padding: 0 -1em 0 1em;
+    border-radius: 0.375em;
+    background-color: rgba(0, 65, 38, 0.85);
+    text-align: center; }
+  main ol li:before {
+    font-family: "ITCOfficinaSerifStdBookRg", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 2.666;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 0px #0b0b0b;
+    position: absolute;
+    bottom: 0em;
+    right: 0em;
+    padding: 0 .5em; }
+
+ol li:hover {
+  -webkit-transform: background-color;
+  -moz-transform: background-color;
+  -ms-transform: background-color;
+  -o-transform: background-color;
+  transform: background-color;
+  -webkit-transform: border-right;
+  -moz-transform: border-right;
+  -ms-transform: border-right;
+  -o-transform: border-right;
+  transform: border-right;
+  -webkit-transform: border-bottom;
+  -moz-transform: border-bottom;
+  -ms-transform: border-bottom;
+  -o-transform: border-bottom;
+  transform: border-bottom;
+  border-right: 0px solid rgba(255, 255, 255, 0);
+  border-bottom: 0px solid rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.5); }
+  ol li:hover:after {
+    -webkit-transform: color;
+    -moz-transform: color;
+    -ms-transform: color;
+    -o-transform: color;
+    transform: color;
+    -webkit-transform: font-size;
+    -moz-transform: font-size;
+    -ms-transform: font-size;
+    -o-transform: font-size;
+    transform: font-size;
+    color: #cccc00;
+    font-size: 1.7em;
+    padding: -1em;
+    background-color: rgba(0, 65, 38, 0); }
+
+ol li:nth-of-type(38):after,
+:nth-of-type(39):after,
+:nth-of-type(40):after,
+:nth-of-type(41):after,
+:nth-of-type(42):after {
+  content: " ";
+  border-right: 0px;
+  border-bottom: 0px; }
+
 .month_1 {
   background-image: url("../img/kerr-janOffice.jpg");
-  background-image: url("../img/kerr-janOffice.jpg");
-  counter-reset: ol; }
-  .month_1 ol li {
-    background-color: rgba(0, 65, 38, 0.55); }
-    .month_1 ol li:hover {
-      background-color: #004126; }
-    .month_1 ol li:after {
-      content: counter(ol);
-      counter-increment: ol;
-      position: absolute;
-      bottom: -.75em;
-      right: .25em; }
-  .month_1 li:nth-of-type(32),
-  .month_1 :nth-of-type(33),
-  .month_1 :nth-of-type(34),
-  .month_1 :nth-of-type(35) {
-    background-color: rgba(0, 65, 38, 0); }
-    .month_1 li:nth-of-type(32):hover,
-    .month_1 :nth-of-type(33):hover,
-    .month_1 :nth-of-type(34):hover,
-    .month_1 :nth-of-type(35):hover {
-      background-color: rgba(0, 65, 38, 0); }
-  .month_1 li:nth-of-type(32):after,
-  .month_1 :nth-of-type(33):after,
-  .month_1 :nth-of-type(34):after,
-  .month_1 :nth-of-type(35):after {
-    content: " "; }
+  background-image: url("../img/kerr-janOffice.jpg"); }
+  .month_1 ol {
+    counter-reset: li 0; }
+  .month_1 ol li:nth-of-type(36):after,
+  .month_1 :nth-of-type(37):after {
+    content: " ";
+    border-right: 0px;
+    border-bottom: 0px; }
 
 .month_2 {
   background-image: url("../img/kerr-feb.jpg");
@@ -480,40 +562,6 @@ header {
   background-size: cover; }
   .month_2 ol {
     counter-reset: li -3; }
-  .month_2 ol li {
-    background-color: rgba(153, 136, 68, 0.45); }
-    .month_2 ol li:hover {
-      background-color: #998844; }
-  .month_2 li:after {
-    content: counter(li);
-    counter-increment: li;
-    position: absolute;
-    bottom: -.75em;
-    right: .25em; }
-  .month_2 li:nth-of-type(1),
-  .month_2 :nth-of-type(2),
-  .month_2 :nth-of-type(3),
-  .month_2 :nth-of-type(32),
-  .month_2 :nth-of-type(33),
-  .month_2 :nth-of-type(34),
-  .month_2 :nth-of-type(35) {
-    background-color: rgba(153, 136, 68, 0); }
-    .month_2 li:nth-of-type(1):hover,
-    .month_2 :nth-of-type(2):hover,
-    .month_2 :nth-of-type(3):hover,
-    .month_2 :nth-of-type(32):hover,
-    .month_2 :nth-of-type(33):hover,
-    .month_2 :nth-of-type(34):hover,
-    .month_2 :nth-of-type(35):hover {
-      background-color: rgba(153, 136, 68, 0); }
-  .month_2 li:nth-of-type(1):after,
-  .month_2 :nth-of-type(2):after,
-  .month_2 :nth-of-type(3):after,
-  .month_2 :nth-of-type(32):after,
-  .month_2 :nth-of-type(33):after,
-  .month_2 :nth-of-type(34):after,
-  .month_2 :nth-of-type(35):after {
-    content: " "; }
 
 .month_3 {
   background-image: url("../img/kerr-marParkingLot.jpg");
@@ -523,31 +571,6 @@ header {
   background-size: cover; }
   .month_3 ol {
     counter-reset: li -3; }
-  .month_3 ol li {
-    background-color: rgba(153, 136, 68, 0.45); }
-    .month_3 ol li:hover {
-      background-color: #998844; }
-  .month_3 ol li:after {
-    content: counter(li);
-    counter-increment: li;
-    position: absolute;
-    bottom: -.75em;
-    right: .25em; }
-  .month_3 li:nth-of-type(1),
-  .month_3 :nth-of-type(2),
-  .month_3 :nth-of-type(3),
-  .month_3 :nth-of-type(35) {
-    background-color: rgba(153, 136, 68, 0); }
-    .month_3 li:nth-of-type(1):hover,
-    .month_3 :nth-of-type(2):hover,
-    .month_3 :nth-of-type(3):hover,
-    .month_3 :nth-of-type(35):hover {
-      background-color: rgba(153, 136, 68, 0); }
-  .month_3 li:nth-of-type(1):after,
-  .month_3 :nth-of-type(2):after,
-  .month_3 :nth-of-type(3):after,
-  .month_3 :nth-of-type(35):after {
-    content: " "; }
 
 .month_4 {
   background-image: url("../img/kerr-april.jpg");
@@ -557,42 +580,6 @@ header {
   background-size: cover; }
   .month_4 ol {
     counter-reset: li -6; }
-  .month_4 ol li {
-    background-color: rgba(153, 136, 68, 0.45); }
-    .month_4 ol li:hover {
-      background-color: #998844; }
-  .month_4 ol li:after {
-    content: counter(li);
-    counter-increment: li;
-    position: absolute;
-    bottom: -.75em;
-    right: .25em; }
-  .month_4 ol li:nth-of-type(35):before {
-    content: "29/30";
-    bottom: -.75em;
-    right: .25em; }
-  .month_4 li:nth-of-type(1),
-  .month_4 :nth-of-type(2),
-  .month_4 :nth-of-type(3),
-  .month_4 :nth-of-type(4),
-  .month_4 :nth-of-type(5),
-  .month_4 :nth-of-type(6) {
-    background-color: rgba(153, 136, 68, 0); }
-    .month_4 li:nth-of-type(1):hover,
-    .month_4 :nth-of-type(2):hover,
-    .month_4 :nth-of-type(3):hover,
-    .month_4 :nth-of-type(4):hover,
-    .month_4 :nth-of-type(5):hover,
-    .month_4 :nth-of-type(6):hover {
-      background-color: rgba(153, 136, 68, 0); }
-  .month_4 li:nth-of-type(1):after,
-  .month_4 :nth-of-type(2):after,
-  .month_4 :nth-of-type(3):after,
-  .month_4 :nth-of-type(4):after,
-  .month_4 :nth-of-type(5):after,
-  .month_4 :nth-of-type(6):after,
-  .month_4 :nth-of-type(35):after {
-    content: " "; }
 
 .month_5 {
   background-image: url("../img/kerr-mayDust.jpg");
@@ -602,31 +589,6 @@ header {
   background-size: cover; }
   .month_5 ol {
     counter-reset: li -1; }
-  .month_5 ol li {
-    background-color: rgba(0, 65, 38, 0.35); }
-    .month_5 ol li:hover {
-      background-color: #004126; }
-  .month_5 ol li:after {
-    content: counter(li);
-    counter-increment: li;
-    position: absolute;
-    bottom: -.75em;
-    right: .25em; }
-  .month_5 li:nth-of-type(1),
-  .month_5 :nth-of-type(33),
-  .month_5 :nth-of-type(34),
-  .month_5 :nth-of-type(35) {
-    background-color: rgba(0, 65, 38, 0); }
-    .month_5 li:nth-of-type(1):hover,
-    .month_5 :nth-of-type(33):hover,
-    .month_5 :nth-of-type(34):hover,
-    .month_5 :nth-of-type(35):hover {
-      background-color: rgba(0, 65, 38, 0); }
-  .month_5 li:nth-of-type(1):after,
-  .month_5 :nth-of-type(33):after,
-  .month_5 :nth-of-type(34):after,
-  .month_5 :nth-of-type(35):after {
-    content: " "; }
 
 .month_6 {
   background-image: url("../img/kerr-juneDirt.jpg");
@@ -636,34 +598,6 @@ header {
   background-size: cover; }
   .month_6 ol {
     counter-reset: li -4; }
-  .month_6 ol li {
-    background-color: rgba(0, 65, 38, 0.35); }
-    .month_6 ol li:hover {
-      background-color: #004126; }
-  .month_6 ol li:after {
-    content: counter(li);
-    counter-increment: li;
-    position: absolute;
-    bottom: -.75em;
-    right: .25em; }
-  .month_6 li:nth-of-type(1),
-  .month_6 :nth-of-type(2),
-  .month_6 :nth-of-type(3),
-  .month_6 :nth-of-type(4),
-  .month_6 :nth-of-type(35) {
-    background-color: rgba(0, 65, 38, 0); }
-    .month_6 li:nth-of-type(1):hover,
-    .month_6 :nth-of-type(2):hover,
-    .month_6 :nth-of-type(3):hover,
-    .month_6 :nth-of-type(4):hover,
-    .month_6 :nth-of-type(35):hover {
-      background-color: rgba(0, 65, 38, 0); }
-  .month_6 li:nth-of-type(1):after,
-  .month_6 :nth-of-type(2):after,
-  .month_6 :nth-of-type(3):after,
-  .month_6 :nth-of-type(4):after,
-  .month_6 :nth-of-type(35):after {
-    content: " "; }
 
 .month_7 {
   background-image: url("../img/kerr-julySky.jpg");
@@ -673,47 +607,6 @@ header {
   background-size: cover; }
   .month_7 ol {
     counter-reset: li -6; }
-  .month_7 ol li {
-    background-color: rgba(0, 65, 38, 0.45); }
-    .month_7 ol li:hover {
-      background-color: #004126; }
-  .month_7 ol li:after {
-    content: counter(li);
-    counter-increment: li;
-    position: absolute;
-    bottom: -.75em;
-    right: .25em; }
-  .month_7 ol li:nth-of-type(29):before {
-    content: "24/30";
-    bottom: -.75em;
-    right: .25em; }
-  .month_7 ol li:nth-of-type(30):before {
-    content: "25/31";
-    bottom: -.75em;
-    right: .25em; }
-  .month_7 li:nth-of-type(1),
-  .month_7 :nth-of-type(2),
-  .month_7 :nth-of-type(3),
-  .month_7 :nth-of-type(4),
-  .month_7 :nth-of-type(5),
-  .month_7 :nth-of-type(6) {
-    background-color: rgba(153, 136, 68, 0); }
-    .month_7 li:nth-of-type(1):hover,
-    .month_7 :nth-of-type(2):hover,
-    .month_7 :nth-of-type(3):hover,
-    .month_7 :nth-of-type(4):hover,
-    .month_7 :nth-of-type(5):hover,
-    .month_7 :nth-of-type(6):hover {
-      background-color: rgba(153, 136, 68, 0); }
-  .month_7 li:nth-of-type(1):after,
-  .month_7 :nth-of-type(2):after,
-  .month_7 :nth-of-type(3):after,
-  .month_7 :nth-of-type(4):after,
-  .month_7 :nth-of-type(5):after,
-  .month_7 :nth-of-type(6):after,
-  .month_7 :nth-of-type(29):after,
-  .month_7 :nth-of-type(30):after {
-    content: " "; }
 
 .month_8 {
   background-image: url("../img/kerr-augustBridge.jpg");
@@ -723,31 +616,6 @@ header {
   background-size: cover; }
   .month_8 ol {
     counter-reset: li -2; }
-  .month_8 ol li {
-    background-color: rgba(0, 65, 38, 0.45); }
-    .month_8 ol li:hover {
-      background-color: #004126; }
-  .month_8 ol li:after {
-    content: counter(li);
-    counter-increment: li;
-    position: absolute;
-    bottom: -.75em;
-    right: .25em; }
-  .month_8 li:nth-of-type(1),
-  .month_8 :nth-of-type(2),
-  .month_8 :nth-of-type(34),
-  .month_8 :nth-of-type(35) {
-    background-color: rgba(153, 136, 68, 0); }
-    .month_8 li:nth-of-type(1):hover,
-    .month_8 :nth-of-type(2):hover,
-    .month_8 :nth-of-type(34):hover,
-    .month_8 :nth-of-type(35):hover {
-      background-color: rgba(153, 136, 68, 0); }
-  .month_8 li:nth-of-type(1):after,
-  .month_8 :nth-of-type(2):after,
-  .month_8 :nth-of-type(34):after,
-  .month_8 :nth-of-type(35):after {
-    content: " "; }
 
 .month_9 {
   background-image: url("../img/kerr-septNight.jpg");
@@ -757,34 +625,6 @@ header {
   background-size: cover; }
   .month_9 ol {
     counter-reset: li -5; }
-  .month_9 ol li {
-    background-color: rgba(11, 11, 11, 0.35); }
-    .month_9 ol li:hover {
-      background-color: #0b0b0b; }
-  .month_9 ol li:after {
-    content: counter(li);
-    counter-increment: li;
-    position: absolute;
-    bottom: -.75em;
-    right: .25em; }
-  .month_9 li:nth-of-type(1),
-  .month_9 :nth-of-type(2),
-  .month_9 :nth-of-type(3),
-  .month_9 :nth-of-type(4),
-  .month_9 :nth-of-type(5) {
-    background-color: rgba(11, 11, 11, 0); }
-    .month_9 li:nth-of-type(1):hover,
-    .month_9 :nth-of-type(2):hover,
-    .month_9 :nth-of-type(3):hover,
-    .month_9 :nth-of-type(4):hover,
-    .month_9 :nth-of-type(5):hover {
-      background-color: rgba(11, 11, 11, 0); }
-  .month_9 li:nth-of-type(1):after,
-  .month_9 :nth-of-type(2):after,
-  .month_9 :nth-of-type(3):after,
-  .month_9 :nth-of-type(4):after,
-  .month_9 :nth-of-type(5):after {
-    content: " "; }
 
 .month_10 {
   background-image: url("../img/kerr-octSwamp.jpg");
@@ -794,31 +634,6 @@ header {
   background-size: cover; }
   .month_10 ol {
     counter-reset: li 0; }
-  .month_10 ol li {
-    background-color: rgba(0, 65, 38, 0.55); }
-    .month_10 ol li:hover {
-      background-color: #004126; }
-  .month_10 ol li:after {
-    content: counter(li);
-    counter-increment: li;
-    position: absolute;
-    bottom: -.75em;
-    right: .25em; }
-  .month_10 li:nth-of-type(32),
-  .month_10 :nth-of-type(33),
-  .month_10 :nth-of-type(34),
-  .month_10 :nth-of-type(35) {
-    background-color: rgba(0, 65, 38, 0); }
-    .month_10 li:nth-of-type(32):hover,
-    .month_10 :nth-of-type(33):hover,
-    .month_10 :nth-of-type(34):hover,
-    .month_10 :nth-of-type(35):hover {
-      background-color: rgba(0, 65, 38, 0); }
-  .month_10 li:nth-of-type(32):after,
-  .month_10 :nth-of-type(33):after,
-  .month_10 :nth-of-type(34):after,
-  .month_10 :nth-of-type(35):after {
-    content: " "; }
 
 .month_11 {
   background-image: url("../img/kerr-novRoad.jpg");
@@ -828,34 +643,6 @@ header {
   background-size: cover; }
   .month_11 ol {
     counter-reset: li -3; }
-  .month_11 ol li {
-    background-color: rgba(153, 136, 68, 0.55); }
-    .month_11 ol li:hover {
-      background-color: #998844; }
-  .month_11 ol li:after {
-    content: counter(li);
-    counter-increment: li;
-    position: absolute;
-    bottom: -.75em;
-    right: .25em; }
-  .month_11 li:nth-of-type(1),
-  .month_11 :nth-of-type(2),
-  .month_11 :nth-of-type(3),
-  .month_11 :nth-of-type(34),
-  .month_11 :nth-of-type(35) {
-    background-color: rgba(153, 136, 68, 0); }
-    .month_11 li:nth-of-type(1):hover,
-    .month_11 :nth-of-type(2):hover,
-    .month_11 :nth-of-type(3):hover,
-    .month_11 :nth-of-type(34):hover,
-    .month_11 :nth-of-type(35):hover {
-      background-color: rgba(153, 136, 68, 0); }
-  .month_11 li:nth-of-type(1):after,
-  .month_11 :nth-of-type(2):after,
-  .month_11 :nth-of-type(3):after,
-  .month_11 :nth-of-type(34):after,
-  .month_11 :nth-of-type(35):after {
-    content: " "; }
 
 .month_12 {
   background-image: url("../img/kerr-decNightRoad.jpg");
@@ -865,39 +652,6 @@ header {
   background-size: cover; }
   .month_12 ol {
     counter-reset: li -5; }
-  .month_12 ol li {
-    background-color: rgba(0, 65, 38, 0.35); }
-    .month_12 ol li:hover {
-      background-color: #004126; }
-  .month_12 ol li:after {
-    content: counter(li);
-    counter-increment: li;
-    position: absolute;
-    bottom: -.75em;
-    right: .25em; }
-  .month_12 ol li:nth-of-type(35):before {
-    content: "30/31";
-    bottom: -.75em;
-    right: .25em; }
-  .month_12 li:nth-of-type(1),
-  .month_12 :nth-of-type(2),
-  .month_12 :nth-of-type(3),
-  .month_12 :nth-of-type(4),
-  .month_12 :nth-of-type(5) {
-    background-color: rgba(153, 136, 68, 0); }
-    .month_12 li:nth-of-type(1):hover,
-    .month_12 :nth-of-type(2):hover,
-    .month_12 :nth-of-type(3):hover,
-    .month_12 :nth-of-type(4):hover,
-    .month_12 :nth-of-type(5):hover {
-      background-color: rgba(153, 136, 68, 0); }
-  .month_12 li:nth-of-type(1):after,
-  .month_12 :nth-of-type(2):after,
-  .month_12 :nth-of-type(3):after,
-  .month_12 :nth-of-type(4):after,
-  .month_12 :nth-of-type(5):after,
-  .month_12 :nth-of-type(35):after {
-    content: " "; }
 
 footer {
   width: 100vw;

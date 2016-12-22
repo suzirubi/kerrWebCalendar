@@ -63,13 +63,22 @@ main h2 {
   line-height: 1;
   color: shade($kerrGreen,5%);
   text-transform: uppercase;
+  margin:0;
+  border-radius: 3px;
+  background-color: rgba($white,0.45);
+  padding: .1em .5em .2em .5em;
+  text-shadow: 1px 1px 0px $white;
+}
+.month_9 h2 {
+  background-color: rgba($black,0.45);
+  text-shadow: 1px 1px 0px $black;
 }
 main ul li {
   font-family: 'kulturista', $georgia, serif;
   font-weight: 600;
   font-size: .9em;
   line-height: (1.1 * 1.5);
-  color: shade($kerrGreen,5%);
+  color: shade($kerrGreen, 5%);
   text-transform: uppercase;
   text-align: center;
 }
@@ -77,55 +86,43 @@ main ul li {
   &:first-of-type:before,
   &:last-of-type:before {
     content:'S';
-    text-shadow: 0 0 5px #ffffff;
+    border-radius: 3px;
+    background-color: rgba($white,0.45);
+    padding: 0em .3em;
+    text-shadow: 1px 1px 0px $white;
   }
   &:nth-of-type(3):before,
   &:nth-of-type(5):before {
     content: "T";
-    text-shadow: 0 0 5px #ffffff;
+    border-radius: 3px;
+    background-color: rgba($white,0.45);
+    padding: 0em .3em;
+    text-shadow: 1px 1px 0px $white;
   }
   &:nth-of-type(2):before {
     content: "M";
-    text-shadow: 0 0 5px #ffffff;
+    border-radius: 3px;
+    background-color: rgba($white,0.45);
+    padding: 0em .3em;
+    text-shadow: 1px 1px 0px $white;
   }
   &:nth-of-type(4):before {
     content: "W";
-    text-shadow: 0 0 5px #ffffff;
+    border-radius: 3px;
+    background-color: rgba($white,0.45);
+    padding: 0em .3em;
+    text-shadow: 1px 1px 0px $white;
   }
   &:nth-of-type(6):before {
     content: "F";
-    text-shadow: 0 0 5px #ffffff;
+    border-radius: 3px;
+    background-color: rgba($white,0.45);
+    padding: 0em .3em;
+    text-shadow: 1px 1px 0px $white;
   }
 }
-main ol {
-  counter-reset: item;
-}
-main ol li {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  &:after {
-    font-family: 'ITCOfficinaSerifStdBookRg', $georgia, serif;
-    font-weight: normal;
-    font-size: 1em;
-    line-height: (2 * 1.333);
-    color: $white;
-    -webkit-font-smoothing: antialiased;
-    text-shadow: 1px 1px 0px $black;
-  }
-  &:before {
-    font-family: 'ITCOfficinaSerifStdBookRg', $georgia, serif;
-    font-weight: normal;
-    font-size: 1em;
-    line-height: (2 * 1.333);
-    color: $white;
-    -webkit-font-smoothing: antialiased;
-    text-shadow: 1px 1px 0px $black;
-    position:absolute;
-    bottom: -.75em;
-    right:.25em;
-  }
-}
+
+
 
 
 // **** BEGIN Footer

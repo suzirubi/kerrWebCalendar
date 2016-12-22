@@ -738,9 +738,7 @@ ol li:nth-of-type(38):after,
   .month_3 :nth-of-type(35):after,
   .month_3 :nth-of-type(36):after,
   .month_3 :nth-of-type(37):after {
-    content: " ";
-    border-right: 0px;
-    border-bottom: 0px; }
+    content: " "; }
 
 .month_4 {
   background-image: url("../img/kerr-april.jpg");
@@ -749,7 +747,64 @@ ol li:nth-of-type(38):after,
   background-repeat: no-repeat;
   background-size: cover; }
   .month_4 ol {
-    counter-reset: li -6; }
+    counter-reset: li -5; }
+  .month_4 ol li {
+    -webkit-transition: background-color 0.5s 0s ease-in-out;
+    -moz-transition: background-color 0.5s 0s ease-in-out;
+    transition: background-color 0.5s 0s ease-in-out;
+    background-color: rgba(255, 255, 255, 0); }
+  .month_4 ol li:hover {
+    -webkit-transform: background-color;
+    -moz-transform: background-color;
+    -ms-transform: background-color;
+    -o-transform: background-color;
+    transform: background-color;
+    background-color: rgba(255, 255, 255, 0.85); }
+  .month_4 li:nth-of-type(1):after,
+  .month_4 :nth-of-type(2):after,
+  .month_4 :nth-of-type(3):after,
+  .month_4 :nth-of-type(4):after,
+  .month_4 :nth-of-type(5):after,
+  .month_4 :nth-of-type(37):after {
+    content: " "; }
+  .month_4 ol li:hover {
+    -webkit-transform: background-color;
+    -moz-transform: background-color;
+    -ms-transform: background-color;
+    -o-transform: background-color;
+    transform: background-color;
+    background-color: rgba(255, 255, 255, 0.85); }
+  .month_4 li:hover:nth-of-type(1),
+  .month_4 :hover:nth-of-type(2),
+  .month_4 :hover:nth-of-type(3),
+  .month_4 :hover:nth-of-type(4),
+  .month_4 :hover:nth-of-type(5),
+  .month_4 :hover:nth-of-type(37),
+  .month_4 :hover:nth-of-type(38),
+  .month_4 :hover:nth-of-type(39),
+  .month_4 :hover:nth-of-type(40),
+  .month_4 :hover:nth-of-type(41),
+  .month_4 :hover:nth-of-type(42) {
+    -webkit-transform: background-color;
+    -moz-transform: background-color;
+    -ms-transform: background-color;
+    -o-transform: background-color;
+    transform: background-color;
+    background-color: rgba(255, 255, 255, 0); }
+  .month_4 ol li:nth-of-type(32),
+  .month_4 :nth-of-type(33),
+  .month_4 :nth-of-type(34),
+  .month_4 :nth-of-type(35),
+  .month_4 :nth-of-type(36) {
+    border-right: 0.5px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25); }
+  .month_4 ol li:nth-of-type(1),
+  .month_4 :nth-of-type(2),
+  .month_4 :nth-of-type(3),
+  .month_4 :nth-of-type(4),
+  .month_4 :nth-of-type(5) {
+    border-right: 0px;
+    border-bottom: 0px; }
 
 .month_5 {
   background-image: url("../img/kerr-mayDust.jpg");
@@ -759,6 +814,54 @@ ol li:nth-of-type(38):after,
   background-size: cover; }
   .month_5 ol {
     counter-reset: li -1; }
+  .month_5 ol li {
+    -webkit-transition: background-color 0.5s 0s ease-in-out;
+    -moz-transition: background-color 0.5s 0s ease-in-out;
+    transition: background-color 0.5s 0s ease-in-out;
+    background-color: rgba(255, 255, 255, 0); }
+  .month_5 ol li:hover {
+    -webkit-transform: background-color;
+    -moz-transform: background-color;
+    -ms-transform: background-color;
+    -o-transform: background-color;
+    transform: background-color;
+    background-color: rgba(255, 255, 255, 0.85); }
+  .month_5 li:hover:nth-of-type(1),
+  .month_5 :hover:nth-of-type(33),
+  .month_5 :hover:nth-of-type(34),
+  .month_5 :hover:nth-of-type(35),
+  .month_5 :hover:nth-of-type(36),
+  .month_5 :hover:nth-of-type(37),
+  .month_5 :hover:nth-of-type(38),
+  .month_5 :hover:nth-of-type(39),
+  .month_5 :hover:nth-of-type(40),
+  .month_5 :hover:nth-of-type(41),
+  .month_5 :hover:nth-of-type(42) {
+    -webkit-transform: background-color;
+    -moz-transform: background-color;
+    -ms-transform: background-color;
+    -o-transform: background-color;
+    transform: background-color;
+    background-color: rgba(255, 255, 255, 0); }
+  .month_5 ol li:nth-of-type(32),
+  .month_5 :nth-of-type(33),
+  .month_5 :nth-of-type(34) {
+    border-right: 0.5px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25); }
+  .month_5 ol li:nth-of-type(1),
+  .month_5 :nth-of-type(33),
+  .month_5 :nth-of-type(34),
+  .month_5 :nth-of-type(35),
+  .month_5 :nth-of-type(35) {
+    border-right: 0px;
+    border-bottom: 0px; }
+  .month_5 ol li:nth-of-type(1):after,
+  .month_5 :nth-of-type(33):after,
+  .month_5 :nth-of-type(34):after,
+  .month_5 :nth-of-type(35):after,
+  .month_5 :nth-of-type(36):after,
+  .month_5 :nth-of-type(37):after {
+    content: " "; }
 
 .month_6 {
   background-image: url("../img/kerr-juneDirt.jpg");
@@ -768,6 +871,63 @@ ol li:nth-of-type(38):after,
   background-size: cover; }
   .month_6 ol {
     counter-reset: li -4; }
+  .month_6 ol li {
+    -webkit-transition: background-color 0.5s 0s ease-in-out;
+    -moz-transition: background-color 0.5s 0s ease-in-out;
+    transition: background-color 0.5s 0s ease-in-out;
+    background-color: rgba(255, 255, 255, 0); }
+  .month_6 ol li:hover {
+    -webkit-transform: background-color;
+    -moz-transform: background-color;
+    -ms-transform: background-color;
+    -o-transform: background-color;
+    transform: background-color;
+    background-color: rgba(255, 255, 255, 0.85); }
+  .month_6 li:nth-of-type(1):after,
+  .month_6 :nth-of-type(2):after,
+  .month_6 :nth-of-type(3):after,
+  .month_6 :nth-of-type(4):after,
+  .month_6 :nth-of-type(35):after,
+  .month_6 :nth-of-type(36):after,
+  .month_6 :nth-of-type(37):after {
+    content: " "; }
+  .month_6 ol li:hover {
+    -webkit-transform: background-color;
+    -moz-transform: background-color;
+    -ms-transform: background-color;
+    -o-transform: background-color;
+    transform: background-color;
+    background-color: rgba(255, 255, 255, 0.85); }
+  .month_6 li:hover:nth-of-type(1),
+  .month_6 :hover:nth-of-type(2),
+  .month_6 :hover:nth-of-type(3),
+  .month_6 :hover:nth-of-type(4),
+  .month_6 :hover:nth-of-type(35),
+  .month_6 :hover:nth-of-type(36),
+  .month_6 :hover:nth-of-type(37),
+  .month_6 :hover:nth-of-type(38),
+  .month_6 :hover:nth-of-type(39),
+  .month_6 :hover:nth-of-type(40),
+  .month_6 :hover:nth-of-type(41),
+  .month_6 :hover:nth-of-type(42) {
+    -webkit-transform: background-color;
+    -moz-transform: background-color;
+    -ms-transform: background-color;
+    -o-transform: background-color;
+    transform: background-color;
+    background-color: rgba(255, 255, 255, 0); }
+  .month_6 ol li:nth-of-type(32),
+  .month_6 :nth-of-type(33),
+  .month_6 :nth-of-type(34) {
+    border-right: 0.5px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25); }
+  .month_6 ol li:nth-of-type(1),
+  .month_6 :nth-of-type(2),
+  .month_6 :nth-of-type(3),
+  .month_6 :nth-of-type(4),
+  .month_6 :nth-of-type(5) {
+    border-right: 0px;
+    border-bottom: 0px; }
 
 .month_7 {
   background-image: url("../img/kerr-julySky.jpg");
@@ -777,6 +937,65 @@ ol li:nth-of-type(38):after,
   background-size: cover; }
   .month_7 ol {
     counter-reset: li -6; }
+  .month_7 ol li {
+    -webkit-transition: background-color 0.5s 0s ease-in-out;
+    -moz-transition: background-color 0.5s 0s ease-in-out;
+    transition: background-color 0.5s 0s ease-in-out;
+    background-color: rgba(255, 255, 255, 0); }
+  .month_7 ol li:hover {
+    -webkit-transform: background-color;
+    -moz-transform: background-color;
+    -ms-transform: background-color;
+    -o-transform: background-color;
+    transform: background-color;
+    background-color: rgba(255, 255, 255, 0.85); }
+  .month_7 li:nth-of-type(1):after,
+  .month_7 :nth-of-type(2):after,
+  .month_7 :nth-of-type(3):after,
+  .month_7 :nth-of-type(4):after,
+  .month_7 :nth-of-type(5):after,
+  .month_7 :nth-of-type(6):after {
+    content: " "; }
+  .month_7 ol li:hover {
+    -webkit-transform: background-color;
+    -moz-transform: background-color;
+    -ms-transform: background-color;
+    -o-transform: background-color;
+    transform: background-color;
+    background-color: rgba(255, 255, 255, 0.85); }
+  .month_7 li:hover:nth-of-type(1),
+  .month_7 :hover:nth-of-type(2),
+  .month_7 :hover:nth-of-type(3),
+  .month_7 :hover:nth-of-type(4),
+  .month_7 :hover:nth-of-type(5),
+  .month_7 :hover:nth-of-type(6),
+  .month_7 :hover:nth-of-type(38),
+  .month_7 :hover:nth-of-type(39),
+  .month_7 :hover:nth-of-type(40),
+  .month_7 :hover:nth-of-type(41),
+  .month_7 :hover:nth-of-type(42) {
+    -webkit-transform: background-color;
+    -moz-transform: background-color;
+    -ms-transform: background-color;
+    -o-transform: background-color;
+    transform: background-color;
+    background-color: rgba(255, 255, 255, 0); }
+  .month_7 ol li:nth-of-type(32),
+  .month_7 :nth-of-type(33),
+  .month_7 :nth-of-type(34),
+  .month_7 :nth-of-type(35),
+  .month_7 :nth-of-type(36),
+  .month_7 :nth-of-type(37) {
+    border-right: 0.5px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25); }
+  .month_7 ol li:nth-of-type(1),
+  .month_7 :nth-of-type(2),
+  .month_7 :nth-of-type(3),
+  .month_7 :nth-of-type(4),
+  .month_7 :nth-of-type(5),
+  .month_7 :nth-of-type(6) {
+    border-right: 0px;
+    border-bottom: 0px; }
 
 .month_8 {
   background-image: url("../img/kerr-augustBridge.jpg");
@@ -786,6 +1005,55 @@ ol li:nth-of-type(38):after,
   background-size: cover; }
   .month_8 ol {
     counter-reset: li -2; }
+  .month_8 ol li {
+    -webkit-transition: background-color 0.5s 0s ease-in-out;
+    -moz-transition: background-color 0.5s 0s ease-in-out;
+    transition: background-color 0.5s 0s ease-in-out;
+    background-color: rgba(255, 255, 255, 0); }
+  .month_8 ol li:hover {
+    -webkit-transform: background-color;
+    -moz-transform: background-color;
+    -ms-transform: background-color;
+    -o-transform: background-color;
+    transform: background-color;
+    background-color: rgba(255, 255, 255, 0.85); }
+  .month_8 li:hover:nth-of-type(1),
+  .month_8 :hover:nth-of-type(2),
+  .month_8 :hover:nth-of-type(34),
+  .month_8 :hover:nth-of-type(35),
+  .month_8 :hover:nth-of-type(36),
+  .month_8 :hover:nth-of-type(37),
+  .month_8 :hover:nth-of-type(38),
+  .month_8 :hover:nth-of-type(39),
+  .month_8 :hover:nth-of-type(40),
+  .month_8 :hover:nth-of-type(41),
+  .month_8 :hover:nth-of-type(42) {
+    -webkit-transform: background-color;
+    -moz-transform: background-color;
+    -ms-transform: background-color;
+    -o-transform: background-color;
+    transform: background-color;
+    background-color: rgba(255, 255, 255, 0); }
+  .month_8 ol li:nth-of-type(31),
+  .month_8 :nth-of-type(32),
+  .month_8 :nth-of-type(33),
+  .month_8 :nth-of-type(34) {
+    border-right: 0.5px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25); }
+  .month_8 ol li:nth-of-type(1),
+  .month_8 :nth-of-type(2),
+  .month_8 :nth-of-type(34),
+  .month_8 :nth-of-type(35),
+  .month_8 :nth-of-type(35) {
+    border-right: 0px;
+    border-bottom: 0px; }
+  .month_8 ol li:nth-of-type(1):after,
+  .month_8 :nth-of-type(2):after,
+  .month_8 :nth-of-type(34):after,
+  .month_8 :nth-of-type(35):after,
+  .month_8 :nth-of-type(36):after,
+  .month_8 :nth-of-type(37):after {
+    content: " "; }
 
 .month_9 {
   background-image: url("../img/kerr-septNight.jpg");
@@ -795,15 +1063,114 @@ ol li:nth-of-type(38):after,
   background-size: cover; }
   .month_9 ol {
     counter-reset: li -5; }
+  .month_9 ol li {
+    -webkit-transition: background-color 0.5s 0s ease-in-out;
+    -moz-transition: background-color 0.5s 0s ease-in-out;
+    transition: background-color 0.5s 0s ease-in-out;
+    background-color: rgba(255, 255, 255, 0); }
+  .month_9 ol li:hover {
+    -webkit-transform: background-color;
+    -moz-transform: background-color;
+    -ms-transform: background-color;
+    -o-transform: background-color;
+    transform: background-color;
+    background-color: rgba(255, 255, 255, 0.85); }
+  .month_9 li:hover:nth-of-type(1),
+  .month_9 :hover:nth-of-type(2),
+  .month_9 :hover:nth-of-type(3),
+  .month_9 :hover:nth-of-type(4),
+  .month_9 :hover:nth-of-type(5),
+  .month_9 :hover:nth-of-type(36),
+  .month_9 :hover:nth-of-type(37),
+  .month_9 :hover:nth-of-type(38),
+  .month_9 :hover:nth-of-type(39),
+  .month_9 :hover:nth-of-type(40),
+  .month_9 :hover:nth-of-type(41),
+  .month_9 :hover:nth-of-type(42) {
+    -webkit-transform: background-color;
+    -moz-transform: background-color;
+    -ms-transform: background-color;
+    -o-transform: background-color;
+    transform: background-color;
+    background-color: rgba(255, 255, 255, 0); }
+  .month_9 ol li:nth-of-type(31),
+  .month_9 :nth-of-type(32),
+  .month_9 :nth-of-type(33),
+  .month_9 :nth-of-type(34),
+  .month_9 :nth-of-type(35) {
+    border-right: 0.5px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25); }
+  .month_9 ol li:nth-of-type(1),
+  .month_9 :nth-of-type(2),
+  .month_9 :nth-of-type(3),
+  .month_9 :nth-of-type(4),
+  .month_9 :nth-of-type(5) {
+    border-right: 0px;
+    border-bottom: 0px; }
+  .month_9 ol li:nth-of-type(1):after,
+  .month_9 :nth-of-type(2):after,
+  .month_9 :nth-of-type(3):after,
+  .month_9 :nth-of-type(4):after,
+  .month_9 :nth-of-type(5):after,
+  .month_9 :nth-of-type(36):after,
+  .month_9 :nth-of-type(37):after {
+    content: " "; }
 
 .month_10 {
-  background-image: url("../img/kerr-octSwamp.jpg");
-  background-image: url("../img/kerr-octSwamp.jpg");
+  background-image: url("../img/kerr-augustBridge.jpg");
+  background-image: url("../img/kerr-augustBridge.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover; }
   .month_10 ol {
     counter-reset: li 0; }
+  .month_10 ol li {
+    -webkit-transition: background-color 0.5s 0s ease-in-out;
+    -moz-transition: background-color 0.5s 0s ease-in-out;
+    transition: background-color 0.5s 0s ease-in-out;
+    background-color: rgba(255, 255, 255, 0); }
+  .month_10 ol li:hover {
+    -webkit-transform: background-color;
+    -moz-transform: background-color;
+    -ms-transform: background-color;
+    -o-transform: background-color;
+    transform: background-color;
+    background-color: rgba(255, 255, 255, 0.85); }
+  .month_10 li:hover:nth-of-type(32),
+  .month_10 :hover:nth-of-type(33),
+  .month_10 :hover:nth-of-type(34),
+  .month_10 :hover:nth-of-type(35),
+  .month_10 :hover:nth-of-type(36),
+  .month_10 :hover:nth-of-type(37),
+  .month_10 :hover:nth-of-type(38),
+  .month_10 :hover:nth-of-type(39),
+  .month_10 :hover:nth-of-type(40),
+  .month_10 :hover:nth-of-type(41),
+  .month_10 :hover:nth-of-type(42) {
+    -webkit-transform: background-color;
+    -moz-transform: background-color;
+    -ms-transform: background-color;
+    -o-transform: background-color;
+    transform: background-color;
+    background-color: rgba(255, 255, 255, 0); }
+  .month_10 ol li:nth-of-type(31),
+  .month_10 :nth-of-type(32),
+  .month_10 :nth-of-type(33) {
+    border-right: 0.5px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25); }
+  .month_10 ol li:nth-of-type(32),
+  .month_10 :nth-of-type(33),
+  .month_10 :nth-of-type(34),
+  .month_10 :nth-of-type(35) {
+    border-right: 0px;
+    border-bottom: 0px; }
+  .month_10 ol li:nth-of-type(32):after,
+  .month_10 :nth-of-type(33):after,
+  .month_10 :nth-of-type(34):after,
+  .month_10 :nth-of-type(35):after,
+  .month_10 :nth-of-type(36):after,
+  .month_10 :nth-of-type(37):after {
+    content: " "; }
 
 .month_11 {
   background-image: url("../img/kerr-novRoad.jpg");
@@ -813,6 +1180,65 @@ ol li:nth-of-type(38):after,
   background-size: cover; }
   .month_11 ol {
     counter-reset: li -3; }
+  .month_11 ol li {
+    -webkit-transition: background-color 0.5s 0s ease-in-out;
+    -moz-transition: background-color 0.5s 0s ease-in-out;
+    transition: background-color 0.5s 0s ease-in-out;
+    background-color: rgba(255, 255, 255, 0); }
+  .month_11 ol li:hover {
+    -webkit-transform: background-color;
+    -moz-transform: background-color;
+    -ms-transform: background-color;
+    -o-transform: background-color;
+    transform: background-color;
+    background-color: rgba(255, 255, 255, 0.85); }
+  .month_11 li:nth-of-type(1):after,
+  .month_11 :nth-of-type(2):after,
+  .month_11 :nth-of-type(3):after,
+  .month_11 :nth-of-type(34):after,
+  .month_11 :nth-of-type(35):after,
+  .month_11 :nth-of-type(36):after,
+  .month_11 :nth-of-type(37):after {
+    content: " "; }
+  .month_11 ol li:hover {
+    -webkit-transform: background-color;
+    -moz-transform: background-color;
+    -ms-transform: background-color;
+    -o-transform: background-color;
+    transform: background-color;
+    background-color: rgba(255, 255, 255, 0.85); }
+  .month_11 li:hover:nth-of-type(1),
+  .month_11 :hover:nth-of-type(2),
+  .month_11 :hover:nth-of-type(3),
+  .month_11 :hover:nth-of-type(34),
+  .month_11 :hover:nth-of-type(35),
+  .month_11 :hover:nth-of-type(36),
+  .month_11 :hover:nth-of-type(37),
+  .month_11 :hover:nth-of-type(38),
+  .month_11 :hover:nth-of-type(39),
+  .month_11 :hover:nth-of-type(40),
+  .month_11 :hover:nth-of-type(41),
+  .month_11 :hover:nth-of-type(42) {
+    -webkit-transform: background-color;
+    -moz-transform: background-color;
+    -ms-transform: background-color;
+    -o-transform: background-color;
+    transform: background-color;
+    background-color: rgba(255, 255, 255, 0); }
+  .month_11 ol li:nth-of-type(4),
+  .month_11 :nth-of-type(5),
+  .month_11 :nth-of-type(6),
+  .month_11 :nth-of-type(33) {
+    border-right: 0.5px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25); }
+  .month_11 ol li:nth-of-type(1),
+  .month_11 :nth-of-type(2),
+  .month_11 :nth-of-type(3),
+  .month_11 :nth-of-type(4),
+  .month_11 :nth-of-type(5),
+  .month_11 :nth-of-type(6) {
+    border-right: 0px;
+    border-bottom: 0px; }
 
 .month_12 {
   background-image: url("../img/kerr-decNightRoad.jpg");
@@ -822,6 +1248,65 @@ ol li:nth-of-type(38):after,
   background-size: cover; }
   .month_12 ol {
     counter-reset: li -5; }
+  .month_12 ol li {
+    -webkit-transition: background-color 0.5s 0s ease-in-out;
+    -moz-transition: background-color 0.5s 0s ease-in-out;
+    transition: background-color 0.5s 0s ease-in-out;
+    background-color: rgba(255, 255, 255, 0); }
+  .month_12 ol li:hover {
+    -webkit-transform: background-color;
+    -moz-transform: background-color;
+    -ms-transform: background-color;
+    -o-transform: background-color;
+    transform: background-color;
+    background-color: rgba(255, 255, 255, 0.85); }
+  .month_12 li:nth-of-type(1):after,
+  .month_12 :nth-of-type(2):after,
+  .month_12 :nth-of-type(3):after,
+  .month_12 :nth-of-type(4):after,
+  .month_12 :nth-of-type(5):after,
+  .month_12 :nth-of-type(37):after {
+    content: " "; }
+  .month_12 ol li:hover {
+    -webkit-transform: background-color;
+    -moz-transform: background-color;
+    -ms-transform: background-color;
+    -o-transform: background-color;
+    transform: background-color;
+    background-color: rgba(255, 255, 255, 0.85); }
+  .month_12 li:hover:nth-of-type(1),
+  .month_12 :hover:nth-of-type(2),
+  .month_12 :hover:nth-of-type(3),
+  .month_12 :hover:nth-of-type(4),
+  .month_12 :hover:nth-of-type(5),
+  .month_12 :hover:nth-of-type(37),
+  .month_12 :hover:nth-of-type(38),
+  .month_12 :hover:nth-of-type(39),
+  .month_12 :hover:nth-of-type(40),
+  .month_12 :hover:nth-of-type(41),
+  .month_12 :hover:nth-of-type(42) {
+    -webkit-transform: background-color;
+    -moz-transform: background-color;
+    -ms-transform: background-color;
+    -o-transform: background-color;
+    transform: background-color;
+    background-color: rgba(255, 255, 255, 0); }
+  .month_12 ol li:nth-of-type(6),
+  .month_12 :nth-of-type(32),
+  .month_12 :nth-of-type(33),
+  .month_12 :nth-of-type(34),
+  .month_12 :nth-of-type(35),
+  .month_12 :nth-of-type(36) {
+    border-right: 0.5px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25); }
+  .month_12 ol li:nth-of-type(1),
+  .month_12 :nth-of-type(2),
+  .month_12 :nth-of-type(3),
+  .month_12 :nth-of-type(4),
+  .month_12 :nth-of-type(5),
+  .month_12 :nth-of-type(37) {
+    border-right: 0px;
+    border-bottom: 0px; }
 
 footer {
   width: 100vw;

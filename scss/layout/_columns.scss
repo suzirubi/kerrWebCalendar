@@ -244,8 +244,6 @@ ol li:nth-of-type(38):after,
           :nth-of-type(36):after,
           :nth-of-type(37):after {
        content: " ";
-       border-right:0px;
-       border-bottom:0px;
   }
 }
 
@@ -254,17 +252,112 @@ ol li:nth-of-type(38):after,
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  & ol {
-    counter-reset: li -6;
+  ol {
+    counter-reset: li -5;
+  }
+  ol li {
+    @include transition(background-color 0.5s 0.0s ease-in-out);
+    background-color: rgba($white, 0.0);
+  }
+  ol li:hover {
+    @include transform(background-color);
+    background-color: rgba($white, 0.85);
+  }
+  li:nth-of-type(1):after,
+          :nth-of-type(2):after,
+          :nth-of-type(3):after,
+          :nth-of-type(4):after,
+          :nth-of-type(5):after,
+          :nth-of-type(37):after {
+       content: " ";
+  }
+  ol li:hover {
+    @include transform(background-color);
+    background-color: rgba($white, 0.85);
+  }
+  li:hover:nth-of-type(1),
+        :hover:nth-of-type(2),
+        :hover:nth-of-type(3),
+        :hover:nth-of-type(4),
+        :hover:nth-of-type(5),
+        :hover:nth-of-type(37),
+        :hover:nth-of-type(38),
+        :hover:nth-of-type(39),
+        :hover:nth-of-type(40),
+        :hover:nth-of-type(41),
+        :hover:nth-of-type(42) {
+      @include transform(background-color);
+      background-color: rgba($white, 0.0);
+  }
+  ol li:nth-of-type(32),
+        :nth-of-type(33),
+        :nth-of-type(34),
+        :nth-of-type(35),
+        :nth-of-type(36) {
+          border-right: 0.5px solid rgba($white, 0.25);
+          border-bottom: 0.5px solid rgba($white, 0.25);
+  }
+  ol li:nth-of-type(1),
+        :nth-of-type(2),
+        :nth-of-type(3),
+        :nth-of-type(4),
+        :nth-of-type(5) {
+         border-right:0px;
+         border-bottom:0px;
   }
 }
+
 .month_5 {
   @include background-image(url("../img/kerr-mayDust.jpg"));
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  & ol {
+  ol {
     counter-reset: li -1;
+  }
+  ol li {
+    @include transition(background-color 0.5s 0.0s ease-in-out);
+    background-color: rgba($white, 0.0);
+  }
+  ol li:hover {
+    @include transform(background-color);
+    background-color: rgba($white, 0.85);
+  }
+  li:hover:nth-of-type(1),
+        :hover:nth-of-type(33),
+        :hover:nth-of-type(34),
+        :hover:nth-of-type(35),
+        :hover:nth-of-type(36),
+        :hover:nth-of-type(37),
+        :hover:nth-of-type(38),
+        :hover:nth-of-type(39),
+        :hover:nth-of-type(40),
+        :hover:nth-of-type(41),
+        :hover:nth-of-type(42) {
+      @include transform(background-color);
+      background-color: rgba($white, 0.0);
+  }
+  ol li:nth-of-type(32),
+        :nth-of-type(33),
+        :nth-of-type(34) {
+          border-right: 0.5px solid rgba($white, 0.25);
+          border-bottom: 0.5px solid rgba($white, 0.25);
+  }
+  ol li:nth-of-type(1),
+        :nth-of-type(33),
+        :nth-of-type(34),
+        :nth-of-type(35),
+        :nth-of-type(35) {
+         border-right:0px;
+         border-bottom:0px;
+  }
+  ol li:nth-of-type(1):after,
+        :nth-of-type(33):after,
+        :nth-of-type(34):after,
+          :nth-of-type(35):after,
+          :nth-of-type(36):after,
+          :nth-of-type(37):after {
+       content: " ";
   }
 }
 .month_6 {
@@ -272,8 +365,58 @@ ol li:nth-of-type(38):after,
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  & ol {
+  ol {
     counter-reset: li -4;
+  }
+  ol li {
+    @include transition(background-color 0.5s 0.0s ease-in-out);
+    background-color: rgba($white, 0.0);
+  }
+  ol li:hover {
+    @include transform(background-color);
+    background-color: rgba($white, 0.85);
+  }
+  li:nth-of-type(1):after,
+          :nth-of-type(2):after,
+          :nth-of-type(3):after,
+          :nth-of-type(4):after,
+          :nth-of-type(35):after,
+          :nth-of-type(36):after,
+          :nth-of-type(37):after {
+       content: " ";
+  }
+  ol li:hover {
+    @include transform(background-color);
+    background-color: rgba($white, 0.85);
+  }
+  li:hover:nth-of-type(1),
+        :hover:nth-of-type(2),
+        :hover:nth-of-type(3),
+        :hover:nth-of-type(4),
+        :hover:nth-of-type(35),
+        :hover:nth-of-type(36),
+        :hover:nth-of-type(37),
+        :hover:nth-of-type(38),
+        :hover:nth-of-type(39),
+        :hover:nth-of-type(40),
+        :hover:nth-of-type(41),
+        :hover:nth-of-type(42) {
+      @include transform(background-color);
+      background-color: rgba($white, 0.0);
+  }
+  ol li:nth-of-type(32),
+        :nth-of-type(33),
+        :nth-of-type(34) {
+          border-right: 0.5px solid rgba($white, 0.25);
+          border-bottom: 0.5px solid rgba($white, 0.25);
+  }
+  ol li:nth-of-type(1),
+        :nth-of-type(2),
+        :nth-of-type(3),
+        :nth-of-type(4),
+        :nth-of-type(5) {
+         border-right:0px;
+         border-bottom:0px;
   }
 }
 .month_7 {
@@ -281,8 +424,60 @@ ol li:nth-of-type(38):after,
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  & ol {
+  ol {
     counter-reset: li -6;
+  }
+  ol li {
+    @include transition(background-color 0.5s 0.0s ease-in-out);
+    background-color: rgba($white, 0.0);
+  }
+  ol li:hover {
+    @include transform(background-color);
+    background-color: rgba($white, 0.85);
+  }
+  li:nth-of-type(1):after,
+          :nth-of-type(2):after,
+          :nth-of-type(3):after,
+          :nth-of-type(4):after,
+          :nth-of-type(5):after,
+          :nth-of-type(6):after {
+       content: " ";
+  }
+  ol li:hover {
+    @include transform(background-color);
+    background-color: rgba($white, 0.85);
+  }
+  li:hover:nth-of-type(1),
+        :hover:nth-of-type(2),
+        :hover:nth-of-type(3),
+        :hover:nth-of-type(4),
+        :hover:nth-of-type(5),
+        :hover:nth-of-type(6),
+        :hover:nth-of-type(38),
+        :hover:nth-of-type(39),
+        :hover:nth-of-type(40),
+        :hover:nth-of-type(41),
+        :hover:nth-of-type(42) {
+      @include transform(background-color);
+      background-color: rgba($white, 0.0);
+  }
+  ol li:nth-of-type(32),
+        :nth-of-type(33),
+        :nth-of-type(34),
+        :nth-of-type(35),
+        :nth-of-type(36),
+        :nth-of-type(37) {
+          border-right: 0.5px solid rgba($white, 0.25);
+          border-bottom: 0.5px solid rgba($white, 0.25);
+  }
+  ol li:nth-of-type(1),
+        :nth-of-type(2),
+        :nth-of-type(3),
+        :nth-of-type(4),
+        :nth-of-type(5),
+        :nth-of-type(6) {
+         border-right:0px;
+         border-bottom:0px;
   }
 }
 .month_8 {
@@ -290,26 +485,163 @@ ol li:nth-of-type(38):after,
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  & ol {
+  ol {
     counter-reset: li -2;
   }
+  ol li {
+    @include transition(background-color 0.5s 0.0s ease-in-out);
+    background-color: rgba($white, 0.0);
+  }
+  ol li:hover {
+    @include transform(background-color);
+    background-color: rgba($white, 0.85);
+  }
+  li:hover:nth-of-type(1),
+        :hover:nth-of-type(2),
+        :hover:nth-of-type(34),
+        :hover:nth-of-type(35),
+        :hover:nth-of-type(36),
+        :hover:nth-of-type(37),
+        :hover:nth-of-type(38),
+        :hover:nth-of-type(39),
+        :hover:nth-of-type(40),
+        :hover:nth-of-type(41),
+        :hover:nth-of-type(42) {
+      @include transform(background-color);
+      background-color: rgba($white, 0.0);
+  }
+  ol li:nth-of-type(31),
+        :nth-of-type(32),
+        :nth-of-type(33),
+        :nth-of-type(34) {
+          border-right: 0.5px solid rgba($white, 0.25);
+          border-bottom: 0.5px solid rgba($white, 0.25);
+  }
+  ol li:nth-of-type(1),
+        :nth-of-type(2),
+        :nth-of-type(34),
+        :nth-of-type(35),
+        :nth-of-type(35) {
+         border-right:0px;
+         border-bottom:0px;
+  }
+  ol li:nth-of-type(1):after,
+        :nth-of-type(2):after,
+        :nth-of-type(34):after,
+          :nth-of-type(35):after,
+          :nth-of-type(36):after,
+          :nth-of-type(37):after {
+       content: " ";
+  }
 }
+
 .month_9 {
   @include background-image(url("../img/kerr-septNight.jpg"));
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  & ol {
+  ol {
     counter-reset: li -5;
+  }
+  ol li {
+    @include transition(background-color 0.5s 0.0s ease-in-out);
+    background-color: rgba($white, 0.0);
+  }
+  ol li:hover {
+    @include transform(background-color);
+    background-color: rgba($white, 0.85);
+  }
+  li:hover:nth-of-type(1),
+        :hover:nth-of-type(2),
+        :hover:nth-of-type(3),
+        :hover:nth-of-type(4),
+        :hover:nth-of-type(5),
+        :hover:nth-of-type(36),
+        :hover:nth-of-type(37),
+        :hover:nth-of-type(38),
+        :hover:nth-of-type(39),
+        :hover:nth-of-type(40),
+        :hover:nth-of-type(41),
+        :hover:nth-of-type(42) {
+      @include transform(background-color);
+      background-color: rgba($white, 0.0);
+  }
+  ol li:nth-of-type(31),
+        :nth-of-type(32),
+        :nth-of-type(33),
+        :nth-of-type(34),
+        :nth-of-type(35) {
+          border-right: 0.5px solid rgba($white, 0.25);
+          border-bottom: 0.5px solid rgba($white, 0.25);
+  }
+  ol li:nth-of-type(1),
+        :nth-of-type(2),
+        :nth-of-type(3),
+        :nth-of-type(4),
+        :nth-of-type(5) {
+         border-right:0px;
+         border-bottom:0px;
+  }
+  ol li:nth-of-type(1):after,
+        :nth-of-type(2):after,
+        :nth-of-type(3):after,
+          :nth-of-type(4):after,
+          :nth-of-type(5):after,
+          :nth-of-type(36):after,
+          :nth-of-type(37):after {
+       content: " ";
   }
 }
 .month_10 {
-  @include background-image(url("../img/kerr-octSwamp.jpg"));
+  @include background-image(url("../img/kerr-augustBridge.jpg"));
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  & ol {
+  ol {
     counter-reset: li 0;
+  }
+  ol li {
+    @include transition(background-color 0.5s 0.0s ease-in-out);
+    background-color: rgba($white, 0.0);
+  }
+  ol li:hover {
+    @include transform(background-color);
+    background-color: rgba($white, 0.85);
+  }
+  li:hover:nth-of-type(32),
+        :hover:nth-of-type(33),
+        :hover:nth-of-type(34),
+        :hover:nth-of-type(35),
+        :hover:nth-of-type(36),
+        :hover:nth-of-type(37),
+        :hover:nth-of-type(38),
+        :hover:nth-of-type(39),
+        :hover:nth-of-type(40),
+        :hover:nth-of-type(41),
+        :hover:nth-of-type(42) {
+      @include transform(background-color);
+      background-color: rgba($white, 0.0);
+  }
+  ol li:nth-of-type(31),
+  :nth-of-type(32),
+      :nth-of-type(33) {
+          border-right: 0.5px solid rgba($white, 0.25);
+          border-bottom: 0.5px solid rgba($white, 0.25);
+  }
+  ol li:nth-of-type(32),
+        :nth-of-type(33),
+        :nth-of-type(34),
+        :nth-of-type(35) {
+         border-right:0px;
+         border-bottom:0px;
+  }
+  ol li:nth-of-type(32):after,
+        :nth-of-type(33):after,
+        :nth-of-type(34):after,
+          :nth-of-type(35):after,
+          :nth-of-type(36):after,
+          :nth-of-type(37):after {
+       content: " ";
   }
 }
 .month_11 {
@@ -317,8 +649,60 @@ ol li:nth-of-type(38):after,
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  & ol {
+  ol {
     counter-reset: li -3;
+  }
+  ol li {
+    @include transition(background-color 0.5s 0.0s ease-in-out);
+    background-color: rgba($white, 0.0);
+  }
+  ol li:hover {
+    @include transform(background-color);
+    background-color: rgba($white, 0.85);
+  }
+  li:nth-of-type(1):after,
+          :nth-of-type(2):after,
+          :nth-of-type(3):after,
+          :nth-of-type(34):after,
+          :nth-of-type(35):after,
+          :nth-of-type(36):after,
+          :nth-of-type(37):after {
+       content: " ";
+  }
+  ol li:hover {
+    @include transform(background-color);
+    background-color: rgba($white, 0.85);
+  }
+  li:hover:nth-of-type(1),
+        :hover:nth-of-type(2),
+        :hover:nth-of-type(3),
+        :hover:nth-of-type(34),
+        :hover:nth-of-type(35),
+        :hover:nth-of-type(36),
+        :hover:nth-of-type(37),
+        :hover:nth-of-type(38),
+        :hover:nth-of-type(39),
+        :hover:nth-of-type(40),
+        :hover:nth-of-type(41),
+        :hover:nth-of-type(42) {
+      @include transform(background-color);
+      background-color: rgba($white, 0.0);
+  }
+  ol li:nth-of-type(4),
+        :nth-of-type(5),
+        :nth-of-type(6),
+        :nth-of-type(33) {
+          border-right: 0.5px solid rgba($white, 0.25);
+          border-bottom: 0.5px solid rgba($white, 0.25);
+  }
+  ol li:nth-of-type(1),
+        :nth-of-type(2),
+        :nth-of-type(3),
+        :nth-of-type(4),
+        :nth-of-type(5),
+        :nth-of-type(6) {
+         border-right:0px;
+         border-bottom:0px;
   }
 }
 .month_12 {
@@ -326,8 +710,60 @@ ol li:nth-of-type(38):after,
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  & ol {
+  ol {
     counter-reset: li -5;
+  }
+  ol li {
+    @include transition(background-color 0.5s 0.0s ease-in-out);
+    background-color: rgba($white, 0.0);
+  }
+  ol li:hover {
+    @include transform(background-color);
+    background-color: rgba($white, 0.85);
+  }
+  li:nth-of-type(1):after,
+          :nth-of-type(2):after,
+          :nth-of-type(3):after,
+          :nth-of-type(4):after,
+          :nth-of-type(5):after,
+          :nth-of-type(37):after {
+       content: " ";
+  }
+  ol li:hover {
+    @include transform(background-color);
+    background-color: rgba($white, 0.85);
+  }
+  li:hover:nth-of-type(1),
+        :hover:nth-of-type(2),
+        :hover:nth-of-type(3),
+        :hover:nth-of-type(4),
+        :hover:nth-of-type(5),
+        :hover:nth-of-type(37),
+        :hover:nth-of-type(38),
+        :hover:nth-of-type(39),
+        :hover:nth-of-type(40),
+        :hover:nth-of-type(41),
+        :hover:nth-of-type(42) {
+      @include transform(background-color);
+      background-color: rgba($white, 0.0);
+  }
+  ol li:nth-of-type(6),
+        :nth-of-type(32),
+        :nth-of-type(33),
+        :nth-of-type(34),
+        :nth-of-type(35),
+        :nth-of-type(36) {
+          border-right: 0.5px solid rgba($white, 0.25);
+          border-bottom: 0.5px solid rgba($white, 0.25);
+  }
+  ol li:nth-of-type(1),
+        :nth-of-type(2),
+        :nth-of-type(3),
+        :nth-of-type(4),
+        :nth-of-type(5),
+        :nth-of-type(37) {
+         border-right:0px;
+         border-bottom:0px;
   }
 }
 

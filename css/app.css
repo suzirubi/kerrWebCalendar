@@ -220,6 +220,18 @@ ol {
   padding: 0; }
 
 @font-face {
+  font-family: 'PreloSlabMedium';
+  src: url("fonts/preloslab-medium-webfont.eot");
+  src: url("fonts/preloslab-medium-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/preloslab-medium-webfont.woff") format("woff"), url("fonts/preloslab-medium-webfont.ttf") format("truetype"), url("fonts/preloslab-medium-webfont.svg#PreloSlabMedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'PreloSlabBold';
+  src: url("fonts/preloslab-bold-webfont.eot");
+  src: url("fonts/preloslab-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/preloslab-bold-webfont.woff") format("woff"), url("fonts/preloslab-bold-webfont.ttf") format("truetype"), url("fonts/preloslab-bold-webfont.svg#PreloSlabBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
   font-family: 'kulturista';
   src: url("../fonts/kulturista_bold-webfont.eot");
   src: url("../fonts/kulturista_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/kulturista_bold-webfont.woff2") format("woff2"), url("../fonts/kulturista_bold-webfont.woff") format("woff"), url("../fonts/kulturista_bold-webfont.ttf") format("truetype"), url("../fonts/kulturista_bold-webfont.svg#kulturistabold") format("svg");
@@ -237,13 +249,19 @@ ol {
   src: url("../fonts/officinaserifstd-book-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/officinaserifstd-book-webfont.woff") format("woff"), url("../fonts/officinaserifstd-book-webfont.ttf") format("truetype"), url("../fonts/officinaserifstd-book-webfont.svg#ITCOfficinaSerifStdBookRg") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'ITCOfficinaSansStdBookRg';
+  src: url("../fonts/officinasansstd-book-webfont.eot");
+  src: url("../fonts/officinasansstd-book-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/officinasansstd-book-webfont.woff") format("woff"), url("../fonts/officinasansstd-book-webfont.ttf") format("truetype"), url("../fonts/officinasansstd-book-webfont.svg#ITCOfficinaSansStdBookRg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 b {
   font-family: "ITCOfficinaSerifStdBookRg", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
   font-size: 16px;
   line-height: 24px; }
 
 p {
-  font-family: "ITCOfficinaSerifStdBookRg", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+  font-family: "ITCOfficinaSansStdBookRg", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
   font-weight: normal;
   font-size: 1em;
   line-height: 2.666; }
@@ -253,6 +271,12 @@ h1 {
   font-weight: 600;
   font-size: 3em;
   line-height: 3.999;
+  color: #004126; }
+
+.preloSlab {
+  font-family: "PreloSlabMedium", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+  font-size: 1em;
+  line-height: 1.5;
   color: #004126; }
 
 main h2 {
@@ -270,6 +294,7 @@ main h2 {
 
 .month_9 h2 {
   background-color: rgba(11, 11, 11, 0.45);
+  color: #998844;
   text-shadow: 1px 1px 0px #0b0b0b; }
 
 main ul li {
@@ -324,7 +349,7 @@ footer h6 {
 main {
   width: 100vw;
   height: 100vh;
-  padding: 6vh 3vw 0vh 2vw;
+  padding: 9vh 3vw 0vh 2vw;
   overflow: hidden;
   background-position: center top;
   background-repeat: no-repeat;
@@ -342,9 +367,9 @@ main {
   position: relative;
   top: 0;
   left: 0; }
-  .monthArrows svg {
-    -webkit-filter: opacity(0.9);
-    filter: opacity(0.9);
+  .monthArrows a svg {
+    -webkit-filter: drop-shadow(0px 0px 1px black);
+    filter: drop-shadow(0px 0px 1px black);
     width: 1.75em;
     margin: 0;
     padding: 0; }
@@ -548,9 +573,9 @@ header {
   filter: drop-shadow(3px 0px 4px #808489);
   background: #004126;
   width: 100vw;
-  height: 6vh;
+  height: 8.5vh;
   margin: 0;
-  padding: 1em 1em;
+  padding: 0em .5em;
   position: fixed;
   top: 0;
   left: 0;
@@ -558,47 +583,72 @@ header {
 
 .navBar {
   width: 100%;
+  height: 8.5vh;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: center; }
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: .25em 0em 0em 0em; }
 
 .navBar .logo {
-  width: 10%;
-  align-self: flex-start; }
-  .navBar .logo a svg {
-    width: 2.75em;
+  width: 12%;
+  height: 100%;
+  align-self: center;
+  margin-right: 0;
+  padding: 0; }
+  .navBar .logo a {
+    margin: 0;
+    padding: 0; }
+  .navBar .logo svg {
     -webkit-filter: drop-shadow(3px 1px 1px #002817);
-    filter: drop-shadow(3px 1px 1px #002817); }
+    filter: drop-shadow(3px 1px 1px #002817);
+    width: 90%;
+    max-width: 3em;
+    height: 90%;
+    margin: 0;
+    padding: 0; }
 
 .name {
-  width: 75%;
+  width: 60%;
+  height: 60%;
   align-self: center;
-  padding: 0em 2em 0em 1em; }
+  margin: 0;
+  padding: 0; }
+  .name a {
+    margin: 0;
+    padding: 0; }
   .name svg {
-    width: 100%;
-    text-align: center;
     -webkit-filter: drop-shadow(3px 1px 1px #002817);
-    filter: drop-shadow(3px 1px 1px #002817); }
+    filter: drop-shadow(3px 1px 1px #002817);
+    width: 90%;
+    max-width: 20em;
+    height: 90%;
+    text-align: center;
+    margin: 0;
+    padding: 0; }
 
 .dropdown-container {
   width: 0%; }
 
-.arrows {
-  width: 15%;
+.menuIcon {
+  width: 19%;
+  align-self: center;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
-  padding: 0 .5em; }
-  .arrows .leftArrow {
-    margin-right: -2.25em; }
-  .arrows .rtArrow {
-    margin-left: -2.25em; }
-  .arrows a svg {
-    height: 1.5em;
-    -webkit-filter: opacity(0.7);
-    filter: opacity(0.7); }
+  margin: 0;
+  padding-right: .5em; }
+  .menuIcon span {
+    width: 100%; }
+    .menuIcon span a svg {
+      -webkit-filter: opacity(0.7);
+      filter: opacity(0.7);
+      width: 100%;
+      max-width: 3em;
+      margin: 0;
+      padding: 0; }
 
 main ol li {
   -webkit-transition: border-right 0s 0s ease-in-out, border-bottom 0s 0s ease-in-out, background-color 0.5s 0.1s ease-in-out;
@@ -1260,8 +1310,8 @@ ol li:nth-of-type(38):after,
     content: " "; }
 
 .month_10 {
-  background-image: url("../img/kerr-augustBridge.jpg");
-  background-image: url("../img/kerr-augustBridge.jpg");
+  background-image: url("../img/kerr-octSwamp.jpg");
+  background-image: url("../img/kerr-octSwamp.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -1453,7 +1503,7 @@ ol li:nth-of-type(38):after,
 
 footer {
   width: 100vw;
-  height: 6vh;
+  height: 8.5vh;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -1470,7 +1520,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2em 3em 1em; }
+  padding: 0 2em 1em 1em; }
   .notificationBar svg {
     height: 1.75em; }
 

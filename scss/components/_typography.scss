@@ -1,3 +1,29 @@
+
+// font-family: prelo slab medium and bold
+@font-face {
+  font-family: 'PreloSlabMedium';
+  src: url('fonts/preloslab-medium-webfont.eot');
+  src: url('fonts/preloslab-medium-webfont.eot?#iefix')
+    format('embedded-opentype'),
+    url('fonts/preloslab-medium-webfont.woff') format('woff'),
+    url('fonts/preloslab-medium-webfont.ttf') format('truetype'),
+    url('fonts/preloslab-medium-webfont.svg#PreloSlabMedium')
+    format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PreloSlabBold';
+  src: url('fonts/preloslab-bold-webfont.eot');
+  src: url('fonts/preloslab-bold-webfont.eot?#iefix')
+    format('embedded-opentype'), url('fonts/preloslab-bold-webfont.woff')
+    format('woff'), url('fonts/preloslab-bold-webfont.ttf')
+    format('truetype'),
+    url('fonts/preloslab-bold-webfont.svg#PreloSlabBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 // font-family: kulturista bold
 @font-face {
     font-family: 'kulturista';
@@ -34,14 +60,23 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'ITCOfficinaSansStdBookRg';
+    src: url('../fonts/officinasansstd-book-webfont.eot');
+    src: url('../fonts/officinasansstd-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/officinasansstd-book-webfont.woff') format('woff'),
+         url('../fonts/officinasansstd-book-webfont.ttf') format('truetype'),
+         url('../fonts/officinasansstd-book-webfont.svg#ITCOfficinaSansStdBookRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 b {
   font-family: 'ITCOfficinaSerifStdBookRg', $georgia, serif;
   font-size: $base__font-size;
   line-height: $base__line;
 }
 p {
-  font-family: 'ITCOfficinaSerifStdBookRg', $georgia, serif;
+  font-family: 'ITCOfficinaSansStdBookRg', $georgia, serif;
   font-weight: normal;
   font-size: 1em;
   line-height: (2 * 1.333);
@@ -51,6 +86,12 @@ h1 {
   font-weight: 600;
   font-size: 3em;
   line-height: (3 * 1.333);
+  color: $kerrGreen;
+}
+.preloSlab {
+  font-family: 'PreloSlabMedium', $georgia, serif;
+  font-size: 1em;
+  line-height: 1.5;
   color: $kerrGreen;
 }
 
@@ -71,6 +112,7 @@ main h2 {
 }
 .month_9 h2 {
   background-color: rgba($black,0.45);
+  color: $kerrGold;
   text-shadow: 1px 1px 0px $black;
 }
 main ul li {

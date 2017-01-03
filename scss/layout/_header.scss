@@ -256,44 +256,48 @@ header {
   padding: .25em 0em 0em 0em;
 }
 .navBar .logo {
-  width: 12%;
+  width: 72%;
   height: 100%;
   align-self: center;
-  margin-right: 0;
-  padding: 0;
+  margin-top: 1.5em;
+  #logo {
+    width: 3em;
+    height: 3em;
+    margin-right: .5em;
+  }
+  #logoWord {
+    width: 16em;
+  }
   a {
     margin:0;
     padding:0;
-  }
-  svg {
-    @include filter(drop-shadow(3px 1px 1px darken($kerrGreen,5%)));
-    width: 90%;
-    max-width: 3em;
-    height: 90%;
-    margin:0;
-    padding:0;
+    svg {
+      @include filter(drop-shadow(3px 1px 1px darken($kerrGreen,5%)));
+      height: 3em;
+      padding:0;
+    }
   }
 }
-.name {
-  width: 60%;
-  height: 60%;
-  align-self: center;
-  margin: 0;
-  padding: 0;
-  a {
-    margin:0;
-    padding:0;
-  }
-  svg {
-    @include filter(drop-shadow(3px 1px 1px darken($kerrGreen,5%)));
-    width:90%;
-    max-width: 20em;
-    height: 90%;
-    text-align: center;
-    margin:0;
-    padding: 0;
+@media only screen and (max-width : 460px) {
+  .navBar .logo {
+    margin-top: 2.5em;
+    #logoWord {
+      height: 2em;
+      width: 12em;
+    }
+    a {
+      margin:0;
+      padding:0;
+      svg {
+        @include filter(drop-shadow(3px 1px 1px darken($kerrGreen,5%)));
+        height: 2em;
+        padding:0;
+      }
+    }
   }
 }
+
+
 .dropdown-container {
   width: 0%;
 }

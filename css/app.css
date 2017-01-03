@@ -592,42 +592,39 @@ header {
   padding: .25em 0em 0em 0em; }
 
 .navBar .logo {
-  width: 12%;
+  width: 72%;
   height: 100%;
   align-self: center;
-  margin-right: 0;
-  padding: 0; }
+  margin-top: 1.5em; }
+  .navBar .logo #logo {
+    width: 3em;
+    height: 3em;
+    margin-right: .5em; }
+  .navBar .logo #logoWord {
+    width: 16em; }
   .navBar .logo a {
     margin: 0;
     padding: 0; }
-  .navBar .logo svg {
-    -webkit-filter: drop-shadow(3px 1px 1px #002817);
-    filter: drop-shadow(3px 1px 1px #002817);
-    width: 90%;
-    max-width: 3em;
-    height: 90%;
-    margin: 0;
-    padding: 0; }
+    .navBar .logo a svg {
+      -webkit-filter: drop-shadow(3px 1px 1px #002817);
+      filter: drop-shadow(3px 1px 1px #002817);
+      height: 3em;
+      padding: 0; }
 
-.name {
-  width: 60%;
-  height: 60%;
-  align-self: center;
-  margin: 0;
-  padding: 0; }
-  .name a {
-    margin: 0;
-    padding: 0; }
-  .name svg {
-    -webkit-filter: drop-shadow(3px 1px 1px #002817);
-    filter: drop-shadow(3px 1px 1px #002817);
-    width: 90%;
-    max-width: 20em;
-    height: 90%;
-    text-align: center;
-    margin: 0;
-    padding: 0; }
-
+@media only screen and (max-width: 460px) {
+  .navBar .logo {
+    margin-top: 2.5em; }
+    .navBar .logo #logoWord {
+      height: 2em;
+      width: 12em; }
+    .navBar .logo a {
+      margin: 0;
+      padding: 0; }
+      .navBar .logo a svg {
+        -webkit-filter: drop-shadow(3px 1px 1px #002817);
+        filter: drop-shadow(3px 1px 1px #002817);
+        height: 2em;
+        padding: 0; } }
 .dropdown-container {
   width: 0%; }
 
@@ -650,6 +647,33 @@ header {
       margin: 0;
       padding: 0; }
 
+.monthArrows {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 0;
+  left: 0; }
+  .monthArrows a svg {
+    -webkit-filter: drop-shadow(0px 0px 1px black);
+    filter: drop-shadow(0px 0px 1px black);
+    width: 1.75em;
+    margin: 0;
+    padding: 0; }
+
+#month_8 .monthArrows a svg {
+  -webkit-filter: drop-shadow(0px 0px 3px black);
+  filter: drop-shadow(0px 0px 3px black); }
+
+#month_4 .monthArrows a svg {
+  -webkit-filter: drop-shadow(0px 0px 3px black);
+  filter: drop-shadow(0px 0px 3px black); }
+
 main ol li {
   -webkit-transition: border-right 0s 0s ease-in-out, border-bottom 0s 0s ease-in-out, background-color 0.5s 0.1s ease-in-out;
   -moz-transition: border-right 0s 0s ease-in-out, border-bottom 0s 0s ease-in-out, background-color 0.5s 0.1s ease-in-out;
@@ -661,8 +685,8 @@ main ol li {
   transform-origin: 0% 0%;
   background-color: rgba(255, 255, 255, 0);
   border-bottom-right-radius: 6px;
-  border-right: 0.5px solid rgba(255, 255, 255, 0.25);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.25); }
+  border-right: 1px solid white;
+  border-bottom: 1px solid white; }
   main ol li:after {
     -webkit-transition: padding 0.5 0.5 ease-out, font-size 0.5s 0.1s ease-out, color 0.5s 0.1s ease-out, background-color 0.5s 0.1s ease-in-out;
     -moz-transition: padding 0.5 0.5 ease-out, font-size 0.5s 0.1s ease-out, color 0.5s 0.1s ease-out, background-color 0.5s 0.1s ease-in-out;
@@ -917,8 +941,8 @@ ol li:nth-of-type(38):after,
   .month_3 ol li:nth-of-type(32),
   .month_3 :nth-of-type(33),
   .month_3 :nth-of-type(34) {
-    border-right: 0.5px solid rgba(255, 255, 255, 0.25);
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25); }
+    border-right: 1px solid white;
+    border-bottom: 1px solid white; }
   .month_3 ol li:nth-of-type(1),
   .month_3 :nth-of-type(2),
   .month_3 :nth-of-type(3),
@@ -989,8 +1013,8 @@ ol li:nth-of-type(38):after,
   .month_4 :nth-of-type(34),
   .month_4 :nth-of-type(35),
   .month_4 :nth-of-type(36) {
-    border-right: 0.5px solid rgba(255, 255, 255, 0.25);
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25); }
+    border-right: 1px solid white;
+    border-bottom: 1px solid white; }
   .month_4 ol li:nth-of-type(1),
   .month_4 :nth-of-type(2),
   .month_4 :nth-of-type(3),
@@ -1039,8 +1063,8 @@ ol li:nth-of-type(38):after,
   .month_5 ol li:nth-of-type(32),
   .month_5 :nth-of-type(33),
   .month_5 :nth-of-type(34) {
-    border-right: 0.5px solid rgba(255, 255, 255, 0.25);
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25); }
+    border-right: 1px solid white;
+    border-bottom: 1px solid white; }
   .month_5 ol li:nth-of-type(1),
   .month_5 :nth-of-type(33),
   .month_5 :nth-of-type(34),
@@ -1112,8 +1136,8 @@ ol li:nth-of-type(38):after,
   .month_6 ol li:nth-of-type(32),
   .month_6 :nth-of-type(33),
   .month_6 :nth-of-type(34) {
-    border-right: 0.5px solid rgba(255, 255, 255, 0.25);
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25); }
+    border-right: 1px solid white;
+    border-bottom: 1px solid white; }
   .month_6 ol li:nth-of-type(1),
   .month_6 :nth-of-type(2),
   .month_6 :nth-of-type(3),
@@ -1179,8 +1203,8 @@ ol li:nth-of-type(38):after,
   .month_7 :nth-of-type(35),
   .month_7 :nth-of-type(36),
   .month_7 :nth-of-type(37) {
-    border-right: 0.5px solid rgba(255, 255, 255, 0.25);
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25); }
+    border-right: 1px solid white;
+    border-bottom: 1px solid white; }
   .month_7 ol li:nth-of-type(1),
   .month_7 :nth-of-type(2),
   .month_7 :nth-of-type(3),
@@ -1231,8 +1255,8 @@ ol li:nth-of-type(38):after,
   .month_8 :nth-of-type(32),
   .month_8 :nth-of-type(33),
   .month_8 :nth-of-type(34) {
-    border-right: 0.5px solid rgba(255, 255, 255, 0.25);
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25); }
+    border-right: 1px solid white;
+    border-bottom: 1px solid white; }
   .month_8 ol li:nth-of-type(1),
   .month_8 :nth-of-type(2),
   .month_8 :nth-of-type(34),
@@ -1291,8 +1315,8 @@ ol li:nth-of-type(38):after,
   .month_9 :nth-of-type(33),
   .month_9 :nth-of-type(34),
   .month_9 :nth-of-type(35) {
-    border-right: 0.5px solid rgba(255, 255, 255, 0.25);
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25); }
+    border-right: 1px solid white;
+    border-bottom: 1px solid white; }
   .month_9 ol li:nth-of-type(1),
   .month_9 :nth-of-type(2),
   .month_9 :nth-of-type(3),
@@ -1349,8 +1373,8 @@ ol li:nth-of-type(38):after,
   .month_10 ol li:nth-of-type(31),
   .month_10 :nth-of-type(32),
   .month_10 :nth-of-type(33) {
-    border-right: 0.5px solid rgba(255, 255, 255, 0.25);
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25); }
+    border-right: 1px solid white;
+    border-bottom: 1px solid white; }
   .month_10 ol li:nth-of-type(32),
   .month_10 :nth-of-type(33),
   .month_10 :nth-of-type(34),
@@ -1422,8 +1446,8 @@ ol li:nth-of-type(38):after,
   .month_11 :nth-of-type(5),
   .month_11 :nth-of-type(6),
   .month_11 :nth-of-type(33) {
-    border-right: 0.5px solid rgba(255, 255, 255, 0.25);
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25); }
+    border-right: 1px solid white;
+    border-bottom: 1px solid white; }
   .month_11 ol li:nth-of-type(1),
   .month_11 :nth-of-type(2),
   .month_11 :nth-of-type(3),
@@ -1490,8 +1514,8 @@ ol li:nth-of-type(38):after,
   .month_12 :nth-of-type(34),
   .month_12 :nth-of-type(35),
   .month_12 :nth-of-type(36) {
-    border-right: 0.5px solid rgba(255, 255, 255, 0.25);
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25); }
+    border-right: 1px solid white;
+    border-bottom: 1px solid white; }
   .month_12 ol li:nth-of-type(1),
   .month_12 :nth-of-type(2),
   .month_12 :nth-of-type(3),

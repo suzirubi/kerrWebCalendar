@@ -1,12 +1,45 @@
 // Begin specific month layout styling
+.monthArrows {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin:0;
+  padding:0;
+  position: relative;
+  top:0;
+  left:0;
+  a svg {
+    // @include filter(opacity(0.9));
+    @include filter(drop-shadow(0px 0px 1px darken($kerrGreen,25%)));
+    width:1.75em;
+    margin:0;
+    padding:0;
+  }
+}
+#month_8 {
+  .monthArrows a svg{
+    @include filter(drop-shadow(0px 0px 3px darken($kerrGreen,70%)));
+
+  }
+}
+#month_4 {
+  .monthArrows a svg{
+    @include filter(drop-shadow(0px 0px 3px darken($kerrGreen,70%)));
+
+  }
+}
+
 
 main ol li {
   @include transition(border-right 0.0s 0.0s ease-in-out, border-bottom 0.0s 0.0s ease-in-out, background-color .5s .1s ease-in-out);
   @include transform-origin(0% 0%);
   background-color: rgba($white, 0.0);
   border-bottom-right-radius: 6px;
-  border-right: 0.5px solid rgba($white, 0.25);
-  border-bottom: 0.5px solid rgba($white, 0.25);
+  border-right: 1px solid rgba($white, 1.0);
+  border-bottom: 1px solid rgba($white, 1.0);
   &:after {
     @include transition(padding 0.5 0.5 ease-out, font-size 0.5s 0.1s ease-out, color 0.5s 0.1s ease-out, background-color 0.5s 0.1s ease-in-out);
     @include transform-origin(0% 0%);
@@ -214,8 +247,8 @@ ol li:nth-of-type(38):after,
   ol li:nth-of-type(32),
         :nth-of-type(33),
         :nth-of-type(34) {
-          border-right: 0.5px solid rgba($white, 0.25);
-          border-bottom: 0.5px solid rgba($white, 0.25);
+          border-right: 1px solid rgba($white, 1.0);
+          border-bottom: 1px solid rgba($white, 1.0);
   }
   ol li:nth-of-type(1),
         :nth-of-type(2),
@@ -281,8 +314,8 @@ ol li:nth-of-type(38):after,
         :nth-of-type(34),
         :nth-of-type(35),
         :nth-of-type(36) {
-          border-right: 0.5px solid rgba($white, 0.25);
-          border-bottom: 0.5px solid rgba($white, 0.25);
+          border-right: 1px solid rgba($white, 1.0);
+          border-bottom: 1px solid rgba($white, 1.0);
   }
   ol li:nth-of-type(1),
         :nth-of-type(2),
@@ -327,8 +360,8 @@ ol li:nth-of-type(38):after,
   ol li:nth-of-type(32),
         :nth-of-type(33),
         :nth-of-type(34) {
-          border-right: 0.5px solid rgba($white, 0.25);
-          border-bottom: 0.5px solid rgba($white, 0.25);
+          border-right: 1px solid rgba($white, 1.0);
+          border-bottom: 1px solid rgba($white, 1.0);
   }
   ol li:nth-of-type(1),
         :nth-of-type(33),
@@ -394,8 +427,8 @@ ol li:nth-of-type(38):after,
   ol li:nth-of-type(32),
         :nth-of-type(33),
         :nth-of-type(34) {
-          border-right: 0.5px solid rgba($white, 0.25);
-          border-bottom: 0.5px solid rgba($white, 0.25);
+          border-right: 1px solid rgba($white, 1.0);
+          border-bottom: 1px solid rgba($white, 1.0);
   }
   ol li:nth-of-type(1),
         :nth-of-type(2),
@@ -454,8 +487,8 @@ ol li:nth-of-type(38):after,
         :nth-of-type(35),
         :nth-of-type(36),
         :nth-of-type(37) {
-          border-right: 0.5px solid rgba($white, 0.25);
-          border-bottom: 0.5px solid rgba($white, 0.25);
+          border-right: 1px solid rgba($white, 1.0);
+          border-bottom: 1px solid rgba($white, 1.0);
   }
   ol li:nth-of-type(1),
         :nth-of-type(2),
@@ -501,8 +534,8 @@ ol li:nth-of-type(38):after,
         :nth-of-type(32),
         :nth-of-type(33),
         :nth-of-type(34) {
-          border-right: 0.5px solid rgba($white, 0.25);
-          border-bottom: 0.5px solid rgba($white, 0.25);
+          border-right: 1px solid rgba($white, 1.0);
+          border-bottom: 1px solid rgba($white, 1.0);
   }
   ol li:nth-of-type(1),
         :nth-of-type(2),
@@ -558,8 +591,8 @@ ol li:nth-of-type(38):after,
         :nth-of-type(33),
         :nth-of-type(34),
         :nth-of-type(35) {
-          border-right: 0.5px solid rgba($white, 0.25);
-          border-bottom: 0.5px solid rgba($white, 0.25);
+          border-right: 1px solid rgba($white, 1.0);
+          border-bottom: 1px solid rgba($white, 1.0);
   }
   ol li:nth-of-type(1),
         :nth-of-type(2),
@@ -612,8 +645,8 @@ ol li:nth-of-type(38):after,
   ol li:nth-of-type(31),
   :nth-of-type(32),
       :nth-of-type(33) {
-          border-right: 0.5px solid rgba($white, 0.25);
-          border-bottom: 0.5px solid rgba($white, 0.25);
+        border-right: 1px solid rgba($white, 1.0);
+        border-bottom: 1px solid rgba($white, 1.0);
   }
   ol li:nth-of-type(32),
         :nth-of-type(33),
@@ -679,8 +712,8 @@ ol li:nth-of-type(38):after,
         :nth-of-type(5),
         :nth-of-type(6),
         :nth-of-type(33) {
-          border-right: 0.5px solid rgba($white, 0.25);
-          border-bottom: 0.5px solid rgba($white, 0.25);
+          border-right: 1px solid rgba($white, 1.0);
+          border-bottom: 1px solid rgba($white, 1.0);
   }
   ol li:nth-of-type(1),
         :nth-of-type(2),
@@ -740,8 +773,8 @@ ol li:nth-of-type(38):after,
         :nth-of-type(34),
         :nth-of-type(35),
         :nth-of-type(36) {
-          border-right: 0.5px solid rgba($white, 0.25);
-          border-bottom: 0.5px solid rgba($white, 0.25);
+          border-right: 1px solid rgba($white, 1.0);
+          border-bottom: 1px solid rgba($white, 1.0);
   }
   ol li:nth-of-type(1),
         :nth-of-type(2),

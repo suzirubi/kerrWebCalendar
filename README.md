@@ -23,11 +23,10 @@ The first stage of this project is design only, to show client and see if he is 
 1. Full-year calendar with client provided images as background which also incorporates logo and mission logo
 2. Event/Holiday notification
 3. Area for client to add their own events.
-4. List the absolute minimum features the project requires to meet this purpose or goal:
-5. Responsive full-page monthly calendar with company brand imagery
-6. Current date highlighted
-7. Date, time and event notification at bottom of page
-8. Sample of calendar like this here: https://codepen.io/adriancarayol/pen/yyVNqW
+4. Responsive full-page monthly calendar with company brand imagery
+5. Current date highlighted
+6. Date, time and event notification at bottom of page
+7. Sample of calendar like this here: https://codepen.io/adriancarayol/pen/yyVNqW
 
 
 ###List the absolute minimum features _*(Minimum Viable Product)*_ the project requires to meet this purpose or goal:
@@ -48,18 +47,18 @@ The first stage of this project is design only, to show client and see if he is 
 - Adobe Illustrator
 - Adobe Photoshop
 
-#If MVP finished what will be developed next in descending order of importance:
+###If MVP finished what will be developed next in descending order of importance:
 
 - [ ] Start work on today's date javascript functionality
 
 - [ ] Create functionality for storing event
 
 
-#What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
+###What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
 
 - More knowledge of Javascipt and server side storing capabilities
 
-##This and previous project links
+#####This and previous project links
 * [Visit my gh-page for CSS Independent Project #4](https://rawgit.com/suzirubi/kerrWebCalendar/master/index.html)
 * [Visit my gh-page for CSS Independent Project #3](https://rawgit.com/suzirubi/tarot/master/index.html)
 * [Visit my gh-page for CSS Independent Project #2](https://rawgit.com/suzirubi/thinkGoogle/master/index.html)

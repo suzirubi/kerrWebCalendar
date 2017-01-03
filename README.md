@@ -31,10 +31,10 @@ The first stage of this project is design only, to show client and see if he is 
 
 ###List the absolute minimum features _*(Minimum Viable Product)*_ the project requires to meet this purpose or goal:
 
-- [x ] 12 month calendar with client images and logo
-- [x ] Responsive date grid and images
-- [x ] Animation when grid box clicked on to hide background-color
-- [x ] Static header and footer that allow horizontal scrolling through months
+- [ x ] 12 month calendar with client images and logo
+- [ x ] Responsive date grid and images
+- [ x ] Animation when grid box clicked on to hide background-color
+- [ x ] Static header and footer that allow horizontal scrolling through months
 
 
 

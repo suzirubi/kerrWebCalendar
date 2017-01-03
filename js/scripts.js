@@ -3,8 +3,6 @@ $(document).ready(function(){
     $('.sliding-panel-content,.sliding-panel-fade-screen').toggleClass('is-visible');
     e.preventDefault();
   });
-});
-$(document).ready(function() {
   $(".dropdown-button").click(function() {
     var $button, $menu;
     $button = $(this);

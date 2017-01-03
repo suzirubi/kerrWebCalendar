@@ -7,7 +7,7 @@ footer {
   left:0;
   bottom:0;
   background-color: $kerrGreen;
-  @include filter(drop-shadow(-3px 0px 4px rgba(255,255,255,0.1)));
+  @include filter(drop-shadow(-2px -2px 2px rgba($black,0.25)));
   z-index: 1000;
 }
 .notificationBar {

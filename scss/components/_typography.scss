@@ -95,6 +95,30 @@ h1 {
   color: $kerrGreen;
 }
 
+//begin header
+
+.dropdown-button {
+  font-family: 'ITCOfficinaSansStdBookRg', $georgia, serif;
+  font-weight: normal;
+  font-size: 1.25em;
+  color: $white;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: $dropdown-height;
+  letter-spacing: .05em;
+}
+.dropdown-menu {
+  font-family: 'ITCOfficinaSansStdBookRg', $georgia, serif;
+  font-weight: normal;
+  font-size: 1.25em;
+  color: $white;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  text-transform:capitalize;
+  line-height: $dropdown-height;
+}
+
 // **** BEGIN Main
 
 main h2 {

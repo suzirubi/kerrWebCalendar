@@ -279,6 +279,27 @@ h1 {
   line-height: 1.5;
   color: #004126; }
 
+.dropdown-button {
+  font-family: "ITCOfficinaSansStdBookRg", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+  font-weight: normal;
+  font-size: 1.25em;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 40px;
+  letter-spacing: .05em; }
+
+.dropdown-menu {
+  font-family: "ITCOfficinaSansStdBookRg", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
+  font-weight: normal;
+  font-size: 1.25em;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 40px; }
+
 main h2 {
   font-family: "kulturista", "Georgia", "Cambria", "Times New Roman", "Times", serif, serif;
   font-weight: normal;
@@ -473,104 +494,9 @@ main ol li {
   .sliding-panel-button img {
     height: 1.3em; }
 
-.dropdown {
-  line-height: 1.5em; }
-  .dropdown .dropdown-container {
-    display: none;
-    position: relative;
-    text-align: center; }
-  .dropdown .dropdown-description {
-    background: white;
-    border-bottom: 1px solid silver;
-    border-bottom-left-radius: 3px;
-    border-left: 1px solid silver;
-    border-top-left-radius: 3px;
-    border-top: 1px solid silver;
-    color: #999999;
-    float: left;
-    font-size: 0.7em;
-    line-height: 40px;
-    margin: 0;
-    padding: 0 0.5em 0 1em; }
-    @media screen and (min-width: 53.75em) {
-      .dropdown .dropdown-description {
-        font-size: 1em; } }
-  .dropdown .dropdown-button {
-    background: white;
-    border-bottom: 1px solid silver;
-    border-bottom-right-radius: 3px;
-    border-right: 1px solid silver;
-    border-top: 1px solid silver;
-    border-top-right-radius: 3px;
-    cursor: pointer;
-    float: right;
-    font-size: 0.7em;
-    line-height: 40px;
-    margin: 0;
-    padding: 0 2.5em 0 0.5em;
-    position: relative; }
-    @media screen and (min-width: 53.75em) {
-      .dropdown .dropdown-button {
-        font-size: 1em;
-        padding: 0 2.5em 0 0.5em; } }
-  .dropdown .dropdown-button:hover {
-    background-color: #f7f7f7; }
-  .dropdown .dropdown-button::after {
-    color: #333;
-    content: "\25BE";
-    display: block;
-    position: absolute;
-    right: 1em;
-    top: 0; }
-  .dropdown .dropdown-menu {
-    background: white;
-    border: 1px solid silver;
-    border-radius: 3px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    color: #333;
-    cursor: pointer;
-    display: none;
-    margin: 0;
-    overflow: show;
-    padding: 0;
-    position: absolute;
-    right: 0;
-    top: 50px;
-    transition: all 0.2s ease-in-out;
-    width: 228px;
-    z-index: 99999; }
-    .dropdown .dropdown-menu::before {
-      position: absolute;
-      top: 0;
-      right: 1em;
-      bottom: 0;
-      left: 0;
-      color: white;
-      content: "\25b2";
-      font-size: 1.4em;
-      pointer-events: none;
-      text-shadow: 0 -2px 2px rgba(0, 0, 0, 0.3);
-      top: -0.7em; }
-  .dropdown .dropdown-menu li {
-    border-bottom: 1px solid silver;
-    color: #333;
-    list-style: none;
-    padding: 0.5em; }
-  .dropdown .dropdown-menu li:hover {
-    background: #f7f7f7; }
-  .dropdown .dropdown-menu li:first-child {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px; }
-  .dropdown .dropdown-menu li:last-child {
-    border: 0;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px; }
-  .dropdown .show-menu {
-    display: block; }
-
 header {
-  -webkit-filter: drop-shadow(3px 0px 4px #808489);
-  filter: drop-shadow(3px 0px 4px #808489);
+  -webkit-filter: drop-shadow(3px 0px 4px #171717);
+  filter: drop-shadow(3px 0px 4px #171717);
   background: #004126;
   width: 100vw;
   height: 8.5vh;
@@ -586,16 +512,16 @@ header {
   height: 8.5vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: 0;
-  padding: .25em 0em 0em 0em; }
+  padding: 0; }
 
 .navBar .logo {
-  width: 72%;
+  width: 81%;
   height: 100%;
   align-self: center;
-  margin-top: 1.5em; }
+  margin-top: 2em; }
   .navBar .logo #logo {
     width: 3em;
     height: 3em;
@@ -609,41 +535,6 @@ header {
       -webkit-filter: drop-shadow(3px 1px 1px #002817);
       filter: drop-shadow(3px 1px 1px #002817);
       height: 3em;
-      padding: 0; }
-
-@media only screen and (max-width: 460px) {
-  .navBar .logo {
-    margin-top: 2.5em; }
-    .navBar .logo #logoWord {
-      height: 2em;
-      width: 12em; }
-    .navBar .logo a {
-      margin: 0;
-      padding: 0; }
-      .navBar .logo a svg {
-        -webkit-filter: drop-shadow(3px 1px 1px #002817);
-        filter: drop-shadow(3px 1px 1px #002817);
-        height: 2em;
-        padding: 0; } }
-.dropdown-container {
-  width: 0%; }
-
-.menuIcon {
-  width: 19%;
-  align-self: center;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding-right: .5em; }
-  .menuIcon span {
-    width: 100%; }
-    .menuIcon span a svg {
-      -webkit-filter: opacity(0.7);
-      filter: opacity(0.7);
-      width: 100%;
-      max-width: 3em;
       margin: 0;
       padding: 0; }
 
@@ -1532,8 +1423,8 @@ footer {
   left: 0;
   bottom: 0;
   background-color: #004126;
-  -webkit-filter: drop-shadow(-3px 0px 4px rgba(255, 255, 255, 0.1));
-  filter: drop-shadow(-3px 0px 4px rgba(255, 255, 255, 0.1));
+  -webkit-filter: drop-shadow(-2px -2px 2px rgba(11, 11, 11, 0.25));
+  filter: drop-shadow(-2px -2px 2px rgba(11, 11, 11, 0.25));
   z-index: 1000; }
 
 .notificationBar {
@@ -1547,5 +1438,121 @@ footer {
   padding: 0 2em 1em 1em; }
   .notificationBar svg {
     height: 1.75em; }
+
+@media only screen and (max-width: 620px) {
+  header {
+    width: 100vw;
+    height: 7vh; }
+
+  main {
+    width: 100vw;
+    height: 100vh;
+    padding: 7.5vh 3vw 0vh 2vw; }
+
+  .navBar .logo {
+    margin-top: 1.5em;
+    margin-left: .25em; }
+    .navBar .logo #logo {
+      margin-right: .33em; }
+    .navBar .logo #logoWord {
+      width: 13.5em; }
+    .navBar .logo a svg {
+      height: 2.5em;
+      padding: 0; }
+
+  .navBar .dropdown {
+    width: 0%;
+    display: none; }
+
+  .navBar .menuIcon {
+    width: 19%;
+    height: 100%;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0em 0em .88em 0em; }
+    .navBar .menuIcon a svg {
+      -webkit-filter: opacity(0.7);
+      filter: opacity(0.7);
+      width: 100%;
+      max-width: 3em;
+      margin: 0;
+      padding: 0; } }
+@media only screen and (min-width: 620px) {
+  header {
+    width: 100vw;
+    height: 8.5vh; }
+
+  .navBar {
+    width: 100%;
+    height: 8.5vh; }
+
+  .navBar .logo {
+    width: 60%;
+    height: 100%;
+    margin-top: 2em;
+    margin-left: .75em; }
+
+  .navBar .dropdown {
+    width: 40%;
+    margin-top: .5em;
+    margin-right: 4%;
+    line-height: 1.5em; }
+    .navBar .dropdown .dropdown-container {
+      width: 100%;
+      display: inline-block;
+      position: relative;
+      text-align: center; }
+    .navBar .dropdown .dropdown-button {
+      background: #004126;
+      border-radius: 3px;
+      cursor: pointer;
+      float: right;
+      margin: 0;
+      padding: 0em 1em;
+      position: relative; }
+    .navBar .dropdown .dropdown-button:hover {
+      background-color: #00321d; }
+    .navBar .dropdown .dropdown-menu {
+      background: #004126;
+      border: 1px solid #004b2c;
+      border-radius: 3px;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+      color: #fff;
+      cursor: pointer;
+      display: none;
+      margin: 0;
+      overflow: show;
+      padding: 0;
+      position: absolute;
+      right: 0;
+      top: 50px;
+      transition: all 0.2s ease-in-out;
+      width: 228px;
+      z-index: 99999; }
+    .navBar .dropdown .dropdown-menu li {
+      border-bottom: 1px solid silver;
+      color: #fff;
+      list-style: none;
+      padding: 0.5em; }
+    .navBar .dropdown .dropdown-menu li:hover {
+      background: #00321d; }
+    .navBar .dropdown .dropdown-menu li:first-child {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px; }
+    .navBar .dropdown .dropdown-menu li:last-child {
+      border: 0;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px; }
+    .navBar .dropdown .show-menu {
+      display: block; }
+
+  .navBar .menuIcon {
+    width: 0%;
+    display: none; }
+    .navBar .menuIcon a svg {
+      width: 0%;
+      max-width: 0em; } }
 
 /*# sourceMappingURL=app.css.map */

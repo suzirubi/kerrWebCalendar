@@ -1,24 +1,5 @@
-// Begin specific month layout styling
-.monthArrows {
-  width: 100%;
-  height: 5%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin:0;
-  padding:0;
-  position: relative;
-  top:0;
-  left:0;
-  a svg {
-    // @include filter(opacity(0.9));
-    @include filter(drop-shadow(0px 0px 1px darken($kerrGreen,25%)));
-    width:1.75em;
-    margin:0;
-    padding:0;
-  }
-}
+// Begin specific month layout styling with date grid styling
+
 #month_8 {
   .monthArrows a svg{
     @include filter(drop-shadow(0px 0px 3px darken($kerrGreen,70%)));

@@ -1,7 +1,7 @@
 # CSS Week Five Independent Project
-_*Epicodus CSS Capstone Independent Project
-Project Name: Kerr Calendar
-Project Author: Suzi Rubino*_
+_*Epicodus CSS Capstone Independent Project*_
+_*Project Name: Kerr Calendar*_
+_*Project Author: Suzi Rubino*_
 
 ##Project’s Purpose or Goal:
 
@@ -30,10 +30,10 @@ The first stage of this project is design only, to show client and see if he is 
 
 ###List the absolute minimum features _*(Minimum Viable Product)*_ the project requires to meet this purpose or goal:
 
-- [ ] 12 month calendar with client images and logo
-- [ ] Responsive date grid and images
-- [ ] Animation when grid box clicked on to hide background-color
-- [ ] Static header and footer that allow horizontal scrolling through months
+- [x ] 12 month calendar with client images and logo
+- [x ] Responsive date grid and images
+- [x ] Animation when grid box clicked on to hide background-color
+- [x ] Static header and footer that allow horizontal scrolling through months
 
 
 
